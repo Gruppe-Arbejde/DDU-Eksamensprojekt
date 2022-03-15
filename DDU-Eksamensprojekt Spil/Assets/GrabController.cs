@@ -26,6 +26,11 @@ public class GrabController : MonoBehaviour
                 grabCheck.collider.gameObject.transform.parent = null;
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
             }
+
+            if (Input.GetKey(KeyCode.J))
+            {
+                
+            }
         }
     }
 }
