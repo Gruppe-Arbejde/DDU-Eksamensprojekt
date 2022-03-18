@@ -287,8 +287,7 @@ MonoBehaviour:
   grabDetect: {fileID: 1724635779}
   boxHolder: {fileID: 1131473595}
   rayDist: 2
-  cut: {fileID: 0}
-  unCut: {fileID: 0}
+  cut: {fileID: 7464383382010289536, guid: 14363b68b6c664a479d48df2b29a1be1, type: 3}
 --- !u!1 &1001085526
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,9 +301,9 @@ GameObject:
   - component: {fileID: 1001085530}
   - component: {fileID: 1001085529}
   m_Layer: 0
-  m_Name: VerticalWall
+  m_Name: VerticalWall_L
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -560,7 +559,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131473594}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.19, y: 0, z: 0}
+  m_LocalPosition: {x: 2.05, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 636860402}
@@ -793,9 +792,9 @@ GameObject:
   - component: {fileID: 1584321152}
   - component: {fileID: 1584321151}
   m_Layer: 0
-  m_Name: HorizontalWall
+  m_Name: HorizontalWall_T
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -954,9 +953,9 @@ GameObject:
   - component: {fileID: 1902936592}
   - component: {fileID: 1902936591}
   m_Layer: 0
-  m_Name: HorizontalWall (1)
+  m_Name: HorizontalWall_B
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1085,9 +1084,9 @@ GameObject:
   - component: {fileID: 1953385411}
   - component: {fileID: 1953385410}
   m_Layer: 0
-  m_Name: VerticalWall (1)
+  m_Name: VerticalWall_R
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
