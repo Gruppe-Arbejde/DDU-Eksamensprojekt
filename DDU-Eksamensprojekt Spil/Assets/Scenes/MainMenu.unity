@@ -427,22 +427,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &178411788
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 129964, guid: 2cae9ca05dddc7c42b6185ffab5f9bbe, type: 3}
-  m_PrefabInstance: {fileID: 1728958692}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 992993502}
-  m_Layer: 0
-  m_Name: 'Glowing Rock Blue 2 (Missing Prefab with guid: 2cae9ca05dddc7c42b6185ffab5f9bbe)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &257832294
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,7 +628,7 @@ MonoBehaviour:
   OptionsMenu: {fileID: 1357245854}
   GameOverMenu: {fileID: 352043038}
   HowToMenu: {fileID: 1334043941}
-  MasterVolume: {fileID: 24100000, guid: 465fa2ca0e110fd4790104fefa2635b2, type: 2}
+  MasterVolume: {fileID: 24100000, guid: c016c41e7b5294940b0bd1f2ba6de215, type: 2}
 --- !u!4 &394780816
 Transform:
   m_ObjectHideFlags: 0
@@ -804,7 +788,6 @@ GameObject:
   - component: {fileID: 422770550}
   - component: {fileID: 422770549}
   - component: {fileID: 422770548}
-  - component: {fileID: 422770552}
   - component: {fileID: 422770551}
   m_Layer: 0
   m_Name: Main Camera
@@ -887,8 +870,8 @@ AudioSource:
   m_GameObject: {fileID: 422770547}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 465fa2ca0e110fd4790104fefa2635b2, type: 2}
-  m_audioClip: {fileID: 8300000, guid: dd8388d8873baa245917f694ad00c0e9, type: 3}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: c016c41e7b5294940b0bd1f2ba6de215, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 67bff906ef18db344abde323e8c46b00, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -974,18 +957,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &422770552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422770547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &469840090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,22 +1327,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601355134}
   m_CullTransparentMesh: 1
---- !u!1 &601752493
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 147164, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-  m_PrefabInstance: {fileID: 1969198525}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1937130971}
-  m_Layer: 0
-  m_Name: 'Glowing Rock Blue 6 (1) (Missing Prefab with guid: 55d2170943c24424fb8400963479a14f)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &624946635
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,134 +1402,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624946635}
   m_CullTransparentMesh: 1
---- !u!1001 &665697328
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1860249071}
-    m_Modifications:
-    - target: {fileID: 142688, guid: b08a3b728fb90754c951ad226c63bd30, type: 3}
-      propertyPath: m_Name
-      value: Planet
-      objectReference: {fileID: 0}
-    - target: {fileID: 489984, guid: b08a3b728fb90754c951ad226c63bd30, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 489984, guid: b08a3b728fb90754c951ad226c63bd30, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.533972
-      objectReference: {fileID: 0}
-    - target: {fileID: 489984, guid: b08a3b728fb90754c951ad226c63bd30, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -6.4933624
-      objectReference: {fileID: 0}
-    - target: {fileID: 489984, guid: b08a3b728fb90754c951ad226c63bd30, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 47.074524
-      objectReference: {fileID: 0}
-    - target: {fileID: 489984, guid: b08a3b728fb90754c951ad226c63bd30, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 489984, guid: b08a3b728fb90754c951ad226c63bd30, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489984, guid: b08a3b728fb90754c951ad226c63bd30, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489984, guid: b08a3b728fb90754c951ad226c63bd30, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489984, guid: b08a3b728fb90754c951ad226c63bd30, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489984, guid: b08a3b728fb90754c951ad226c63bd30, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 489984, guid: b08a3b728fb90754c951ad226c63bd30, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b08a3b728fb90754c951ad226c63bd30, type: 3}
---- !u!4 &740121552
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 427906, guid: 4486733afe3d4bf4f9d01e5536082d74, type: 3}
-  m_PrefabInstance: {fileID: 1225640771}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1901043929}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1860249071}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &819950457
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1860249071}
-    m_Modifications:
-    - target: {fileID: 174664, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_Name
-      value: Glowing Rock Blue 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 28.233973
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.0740776
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 25.250587
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
 --- !u!1 &840683092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,63 +1572,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &854799051
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1860249071}
-    m_Modifications:
-    - target: {fileID: 136630, guid: 98492fd4b0ce10b4a8aaa35fa7f6a489, type: 3}
-      propertyPath: m_Name
-      value: Glowing Rock Blue 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 424066, guid: 98492fd4b0ce10b4a8aaa35fa7f6a489, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 424066, guid: 98492fd4b0ce10b4a8aaa35fa7f6a489, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 21.833973
-      objectReference: {fileID: 0}
-    - target: {fileID: 424066, guid: 98492fd4b0ce10b4a8aaa35fa7f6a489, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -22.693363
-      objectReference: {fileID: 0}
-    - target: {fileID: 424066, guid: 98492fd4b0ce10b4a8aaa35fa7f6a489, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 22.143684
-      objectReference: {fileID: 0}
-    - target: {fileID: 424066, guid: 98492fd4b0ce10b4a8aaa35fa7f6a489, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 424066, guid: 98492fd4b0ce10b4a8aaa35fa7f6a489, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 424066, guid: 98492fd4b0ce10b4a8aaa35fa7f6a489, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 424066, guid: 98492fd4b0ce10b4a8aaa35fa7f6a489, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 424066, guid: 98492fd4b0ce10b4a8aaa35fa7f6a489, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 424066, guid: 98492fd4b0ce10b4a8aaa35fa7f6a489, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 424066, guid: 98492fd4b0ce10b4a8aaa35fa7f6a489, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 98492fd4b0ce10b4a8aaa35fa7f6a489, type: 3}
 --- !u!1 &885462533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,20 +1706,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 885462533}
   m_CullTransparentMesh: 1
---- !u!4 &925443298
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-  m_PrefabInstance: {fileID: 1067966652}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1464877963}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1860249071}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &929441614
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,20 +1781,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929441614}
   m_CullTransparentMesh: 1
---- !u!4 &992993502
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 465008, guid: 2cae9ca05dddc7c42b6185ffab5f9bbe, type: 3}
-  m_PrefabInstance: {fileID: 1728958692}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178411788}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1860249071}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1022431267
 GameObject:
   m_ObjectHideFlags: 0
@@ -2343,136 +2085,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064581411}
   m_CullTransparentMesh: 1
---- !u!1001 &1067966652
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1860249071}
-    m_Modifications:
-    - target: {fileID: 174664, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_Name
-      value: Glowing Rock Blue 4 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -15.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -23.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 25.250587
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
---- !u!1 &1124153426
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 142688, guid: b08a3b728fb90754c951ad226c63bd30, type: 3}
-  m_PrefabInstance: {fileID: 665697328}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1786524334}
-  m_Layer: 0
-  m_Name: 'Planet (Missing Prefab with guid: b08a3b728fb90754c951ad226c63bd30)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1001 &1225640771
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1860249071}
-    m_Modifications:
-    - target: {fileID: 127644, guid: 4486733afe3d4bf4f9d01e5536082d74, type: 3}
-      propertyPath: m_Name
-      value: Glowing Rock Blue 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 427906, guid: 4486733afe3d4bf4f9d01e5536082d74, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 427906, guid: 4486733afe3d4bf4f9d01e5536082d74, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.8783536
-      objectReference: {fileID: 0}
-    - target: {fileID: 427906, guid: 4486733afe3d4bf4f9d01e5536082d74, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 10.006638
-      objectReference: {fileID: 0}
-    - target: {fileID: 427906, guid: 4486733afe3d4bf4f9d01e5536082d74, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 19.094524
-      objectReference: {fileID: 0}
-    - target: {fileID: 427906, guid: 4486733afe3d4bf4f9d01e5536082d74, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 427906, guid: 4486733afe3d4bf4f9d01e5536082d74, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 427906, guid: 4486733afe3d4bf4f9d01e5536082d74, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 427906, guid: 4486733afe3d4bf4f9d01e5536082d74, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 427906, guid: 4486733afe3d4bf4f9d01e5536082d74, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 427906, guid: 4486733afe3d4bf4f9d01e5536082d74, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 427906, guid: 4486733afe3d4bf4f9d01e5536082d74, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4486733afe3d4bf4f9d01e5536082d74, type: 3}
 --- !u!1 &1276533932
 GameObject:
   m_ObjectHideFlags: 0
@@ -2740,20 +2352,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302694073}
   m_CullTransparentMesh: 1
---- !u!4 &1324775001
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 456950, guid: 61a15fe4f1078e34a80b55cd40d951a2, type: 3}
-  m_PrefabInstance: {fileID: 1809147604}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1492638850}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1860249071}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1334043941
 GameObject:
   m_ObjectHideFlags: 0
@@ -2831,22 +2429,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1392412190
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 147164, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-  m_PrefabInstance: {fileID: 2032997056}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2132362021}
-  m_Layer: 0
-  m_Name: 'Glowing Rock Blue 6 (Missing Prefab with guid: 55d2170943c24424fb8400963479a14f)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1403924147
 GameObject:
   m_ObjectHideFlags: 0
@@ -2887,20 +2469,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!4 &1440100253
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 424066, guid: 98492fd4b0ce10b4a8aaa35fa7f6a489, type: 3}
-  m_PrefabInstance: {fileID: 854799051}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546782289}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1860249071}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1444773378
 GameObject:
   m_ObjectHideFlags: 0
@@ -3034,95 +2602,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444773378}
   m_CullTransparentMesh: 1
---- !u!1 &1464877963
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 174664, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-  m_PrefabInstance: {fileID: 1067966652}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 925443298}
-  m_Layer: 0
-  m_Name: 'Glowing Rock Blue 4 (1) (Missing Prefab with guid: f7ae68db1b78ebf4fa8f3728c3da587a)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1492638850
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 176930, guid: 61a15fe4f1078e34a80b55cd40d951a2, type: 3}
-  m_PrefabInstance: {fileID: 1809147604}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1324775001}
-  m_Layer: 0
-  m_Name: 'Glowing Rock Blue 5 (Missing Prefab with guid: 61a15fe4f1078e34a80b55cd40d951a2)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1001 &1519823770
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1860249071}
-    m_Modifications:
-    - target: {fileID: 185212, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_Name
-      value: Glowing Rock Blue 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -24.856028
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.9266376
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 24.993317
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
 --- !u!1 &1531478965
 GameObject:
   m_ObjectHideFlags: 0
@@ -3257,38 +2736,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531478965}
   m_CullTransparentMesh: 1
---- !u!1 &1546782289
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 136630, guid: 98492fd4b0ce10b4a8aaa35fa7f6a489, type: 3}
-  m_PrefabInstance: {fileID: 854799051}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1440100253}
-  m_Layer: 0
-  m_Name: 'Glowing Rock Blue 1 (Missing Prefab with guid: 98492fd4b0ce10b4a8aaa35fa7f6a489)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1549588418
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 185212, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-  m_PrefabInstance: {fileID: 2083372914}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1700473708}
-  m_Layer: 0
-  m_Name: 'Glowing Rock Blue 7 (1) (Missing Prefab with guid: c98daaf434449fd4aa5a00cb9889248d)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1606892391
 GameObject:
   m_ObjectHideFlags: 0
@@ -3423,189 +2870,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606892391}
   m_CullTransparentMesh: 1
---- !u!4 &1700473708
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-  m_PrefabInstance: {fileID: 2083372914}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549588418}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1860249071}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1728958692
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1860249071}
-    m_Modifications:
-    - target: {fileID: 129964, guid: 2cae9ca05dddc7c42b6185ffab5f9bbe, type: 3}
-      propertyPath: m_Name
-      value: Glowing Rock Blue 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 465008, guid: 2cae9ca05dddc7c42b6185ffab5f9bbe, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 465008, guid: 2cae9ca05dddc7c42b6185ffab5f9bbe, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.84009
-      objectReference: {fileID: 0}
-    - target: {fileID: 465008, guid: 2cae9ca05dddc7c42b6185ffab5f9bbe, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -25.993362
-      objectReference: {fileID: 0}
-    - target: {fileID: 465008, guid: 2cae9ca05dddc7c42b6185ffab5f9bbe, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 24.38153
-      objectReference: {fileID: 0}
-    - target: {fileID: 465008, guid: 2cae9ca05dddc7c42b6185ffab5f9bbe, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 465008, guid: 2cae9ca05dddc7c42b6185ffab5f9bbe, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 465008, guid: 2cae9ca05dddc7c42b6185ffab5f9bbe, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 465008, guid: 2cae9ca05dddc7c42b6185ffab5f9bbe, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 465008, guid: 2cae9ca05dddc7c42b6185ffab5f9bbe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 465008, guid: 2cae9ca05dddc7c42b6185ffab5f9bbe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 465008, guid: 2cae9ca05dddc7c42b6185ffab5f9bbe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2cae9ca05dddc7c42b6185ffab5f9bbe, type: 3}
---- !u!4 &1786524334
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 489984, guid: b08a3b728fb90754c951ad226c63bd30, type: 3}
-  m_PrefabInstance: {fileID: 665697328}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124153426}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1860249071}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1809147604
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1860249071}
-    m_Modifications:
-    - target: {fileID: 176930, guid: 61a15fe4f1078e34a80b55cd40d951a2, type: 3}
-      propertyPath: m_Name
-      value: Glowing Rock Blue 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 456950, guid: 61a15fe4f1078e34a80b55cd40d951a2, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 456950, guid: 61a15fe4f1078e34a80b55cd40d951a2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -13
-      objectReference: {fileID: 0}
-    - target: {fileID: 456950, guid: 61a15fe4f1078e34a80b55cd40d951a2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 456950, guid: 61a15fe4f1078e34a80b55cd40d951a2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 23.394665
-      objectReference: {fileID: 0}
-    - target: {fileID: 456950, guid: 61a15fe4f1078e34a80b55cd40d951a2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 456950, guid: 61a15fe4f1078e34a80b55cd40d951a2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 456950, guid: 61a15fe4f1078e34a80b55cd40d951a2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 456950, guid: 61a15fe4f1078e34a80b55cd40d951a2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 456950, guid: 61a15fe4f1078e34a80b55cd40d951a2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 456950, guid: 61a15fe4f1078e34a80b55cd40d951a2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 456950, guid: 61a15fe4f1078e34a80b55cd40d951a2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 61a15fe4f1078e34a80b55cd40d951a2, type: 3}
---- !u!1 &1860249070
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1860249071}
-  m_Layer: 0
-  m_Name: Enviroment
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1860249071
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860249070}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.533972, y: 6.4933624, z: 17.525475}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1969032561}
-  - {fileID: 2132362021}
-  - {fileID: 1324775001}
-  - {fileID: 2012273470}
-  - {fileID: 740121552}
-  - {fileID: 992993502}
-  - {fileID: 1440100253}
-  - {fileID: 1786524334}
-  - {fileID: 1700473708}
-  - {fileID: 1937130971}
-  - {fileID: 925443298}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1869959870
 GameObject:
   m_ObjectHideFlags: 0
@@ -3739,139 +3003,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869959870}
   m_CullTransparentMesh: 1
---- !u!1 &1884827153
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 174664, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-  m_PrefabInstance: {fileID: 819950457}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2012273470}
-  m_Layer: 0
-  m_Name: 'Glowing Rock Blue 4 (Missing Prefab with guid: f7ae68db1b78ebf4fa8f3728c3da587a)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1901043929
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 127644, guid: 4486733afe3d4bf4f9d01e5536082d74, type: 3}
-  m_PrefabInstance: {fileID: 1225640771}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 740121552}
-  m_Layer: 0
-  m_Name: 'Glowing Rock Blue 3 (Missing Prefab with guid: 4486733afe3d4bf4f9d01e5536082d74)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1937130971
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-  m_PrefabInstance: {fileID: 1969198525}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 601752493}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1860249071}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1969032561
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-  m_PrefabInstance: {fileID: 1519823770}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001146307}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1860249071}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1969198525
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1860249071}
-    m_Modifications:
-    - target: {fileID: 147164, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_Name
-      value: Glowing Rock Blue 6 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 40.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 22.232944
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 55d2170943c24424fb8400963479a14f, type: 3}
---- !u!1 &2001146307
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 185212, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-  m_PrefabInstance: {fileID: 1519823770}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1969032561}
-  m_Layer: 0
-  m_Name: 'Glowing Rock Blue 7 (Missing Prefab with guid: c98daaf434449fd4aa5a00cb9889248d)'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &2002000845
 GameObject:
   m_ObjectHideFlags: 0
@@ -3947,20 +3078,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002000845}
   m_CullTransparentMesh: 1
---- !u!4 &2012273470
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 475588, guid: f7ae68db1b78ebf4fa8f3728c3da587a, type: 3}
-  m_PrefabInstance: {fileID: 819950457}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1884827153}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1860249071}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2030515131
 GameObject:
   m_ObjectHideFlags: 0
@@ -4036,63 +3153,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030515131}
   m_CullTransparentMesh: 1
---- !u!1001 &2032997056
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1860249071}
-    m_Modifications:
-    - target: {fileID: 147164, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_Name
-      value: Glowing Rock Blue 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -16.066029
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -13.293363
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 22.232944
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 55d2170943c24424fb8400963479a14f, type: 3}
 --- !u!1 &2057348834
 GameObject:
   m_ObjectHideFlags: 0
@@ -4214,63 +3274,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057348834}
   m_CullTransparentMesh: 1
---- !u!1001 &2083372914
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1860249071}
-    m_Modifications:
-    - target: {fileID: 185212, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_Name
-      value: Glowing Rock Blue 7 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 40.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -20.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 24.993317
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 443760, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c98daaf434449fd4aa5a00cb9889248d, type: 3}
 --- !u!1 &2086908151
 GameObject:
   m_ObjectHideFlags: 0
@@ -4538,20 +3541,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129505136}
   m_CullTransparentMesh: 1
---- !u!4 &2132362021
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 437002, guid: 55d2170943c24424fb8400963479a14f, type: 3}
-  m_PrefabInstance: {fileID: 2032997056}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392412190}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1860249071}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2133851607
 GameObject:
   m_ObjectHideFlags: 0
