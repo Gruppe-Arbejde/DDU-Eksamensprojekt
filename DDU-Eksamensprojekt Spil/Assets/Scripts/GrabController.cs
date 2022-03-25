@@ -51,10 +51,7 @@ public class GrabController : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 grabCheck.collider.gameObject.GetComponent<SpriteRenderer>().sprite = cut;
-                if (grabCheck.collider.gameObject.GetComponent<SpriteRenderer>().sprite = cut)
-                    print("Box Cut = True"); // Debugging
-                else
-                    print("Box Cut = False"); // Debugging
+                print("Box Cut = True"); // Debugging
             }
         }
     }
