@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class GrabController : MonoBehaviour
@@ -7,6 +8,7 @@ public class GrabController : MonoBehaviour
     public Transform boxHolder;
     public float rayDist;
     public Sprite cut;
+
     #endregion
 
     // Update is called once per frame
