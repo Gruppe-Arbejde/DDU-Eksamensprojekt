@@ -16,8 +16,10 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical"); //gives value between -1 and 1 depending on what key is pressed
 
         animator.SetFloat("Horizontal", movement.x);
-        //animator.SetFloat("Vertical", movement.y);
+        //animator.SetFloat("Vertical", movement.y); // if we decide to use vertical animations, use this line
         animator.SetFloat("Speed", movement.sqrMagnitude);
+
+
 
     }
 
