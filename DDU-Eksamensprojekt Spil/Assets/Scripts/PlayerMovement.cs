@@ -16,11 +16,21 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical"); //gives value between -1 and 1 depending on what key is pressed
 
         animator.SetFloat("Horizontal", movement.x);
-        //animator.SetFloat("Vertical", movement.y); // if we decide to use vertical animations, use this line
+        animator.SetFloat("Vertical", movement.y); // if we decide to use vertical animations, use this line
         animator.SetFloat("Speed", movement.sqrMagnitude);
 
-
-
+        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+        {
+            print($"Horizontal: {movement.x}");
+            print($"Vertical: {movement.y}");
+            print($"Speed: {movement.sqrMagnitude}");
+            animator.SetFloat("Last_Horizontal", Input.GetAxisRaw("Horizontal"));
+            //if (movement.sqrMagnitude == 0)
+            //{
+            //    animator.SetFloat("Last_Horizontal", Input.GetAxisRaw("Horizontal"));
+            //    print("Last_Horizontal");
+            //}
+        }
     }
 
     void FixedUpdate() //as update can have fluctuating frame rate fixed update is used instead as it is always called 50 times a second
