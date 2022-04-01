@@ -29,7 +29,7 @@ public class OrderSystem : MonoBehaviour
     {
         if (isRecipeActive == false) //checks if there is a recipe already displayed
         {
-            recipe(Random.Range(0, 2)); //generates a random number so that the recipes chosen are random
+            recipe(Random.Range(0, 3)); //generates a random number so that the recipes chosen are random
             Debug.Log("random generated"); //development help
         }
         else
