@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
             print($"Vertical: {movement.y}");
             print($"Speed: {movement.sqrMagnitude}");
             animator.SetFloat("Last_Horizontal", Input.GetAxisRaw("Horizontal"));
+            animator.SetFloat("Last_Vertical", Input.GetAxisRaw("Vertical"));
             //if (movement.sqrMagnitude == 0)
             //{
             //    animator.SetFloat("Last_Horizontal", Input.GetAxisRaw("Horizontal"));
