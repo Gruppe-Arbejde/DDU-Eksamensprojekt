@@ -8,6 +8,7 @@ public class MenuManager : MonoBehaviour
     public GameObject OptionsMenu;
     public GameObject GameOverMenu;
     public GameObject HowToMenu;
+    public GameObject LevelMenu;
     public AudioMixer MasterVolume;
     public void QuitButtonPress()
     {
@@ -16,7 +17,13 @@ public class MenuManager : MonoBehaviour
     }
     public void PlayButtonPress()
     {
-        SceneManager.LoadScene(1); //loads game when pressed
+        MainMenu.SetActive(false);
+        OptionsMenu.SetActive(false);
+        GameOverMenu.SetActive(false);
+        HowToMenu.SetActive(false);
+        LevelMenu.SetActive(true);
+        Debug.Log("Levels");
+        //SceneManager.LoadScene(1); //loads game when pressed
         Debug.Log("Play");
     }
 
@@ -26,6 +33,7 @@ public class MenuManager : MonoBehaviour
         OptionsMenu.SetActive(false);
         GameOverMenu.SetActive(false);
         HowToMenu.SetActive(false);
+        LevelMenu.SetActive(false);
         Debug.Log("Back");
     }
 
@@ -41,11 +49,25 @@ public class MenuManager : MonoBehaviour
         MainMenu.SetActive(false);
         OptionsMenu.SetActive(false);
         HowToMenu.SetActive(true);
+        LevelMenu.SetActive(false);
         Debug.Log("How To");
     }
     public void SetVolume(float volume)
     {
         MasterVolume.SetFloat("MasterVolume", volume);
         //Debug.Log(volume);
+    }
+
+    public void LevelOneButtonPress()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public void LevelTwoButtonPress()
+    {
+        SceneManager.LoadScene(2);
+    }
+    public void LevelThirdButtonPress()
+    {
+        SceneManager.LoadScene(3);
     }
 }
