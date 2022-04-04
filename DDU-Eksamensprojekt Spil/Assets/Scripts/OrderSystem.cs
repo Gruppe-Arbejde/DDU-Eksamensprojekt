@@ -8,6 +8,7 @@ public class OrderSystem : MonoBehaviour
     public bool isRecipeActive;
     //public GameObject recipeObject;
     public SpriteRenderer spriteColor;
+    public Sprite recipeSprite;
 
     // Start is called before the first frame update
     void Start()
