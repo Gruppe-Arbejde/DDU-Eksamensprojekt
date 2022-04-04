@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class OrderSystem : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class OrderSystem : MonoBehaviour
     public bool isRecipeActive;
     //public GameObject recipeObject;
     public SpriteRenderer spriteColor;
+    public Image RecipeImage;
 
     // Start is called before the first frame update
     void Start()
@@ -58,13 +60,16 @@ public class OrderSystem : MonoBehaviour
         switch (recipeName) //multi selection of recipes depending of random value generated
         {
             case 0:
-                spriteColor.color = Color.red;
+                RecipeImage.color = Color.red;
+                //spriteColor.color = Color.red;
                 break;
             case 1:
-                spriteColor.color = Color.blue;
+                RecipeImage.color = Color.green;
+                //spriteColor.color = Color.blue;
                 break;
             case 2:
-                spriteColor.color = Color.green;
+                RecipeImage.color = Color.blue;
+                //spriteColor.color = Color.green;
                 break;
             default:
                 break;
