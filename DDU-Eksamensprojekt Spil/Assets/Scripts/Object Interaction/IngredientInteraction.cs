@@ -16,9 +16,7 @@ public class IngredientInteraction : MonoBehaviour
     bool pickUpAllowed;
 
     public int generatorID;
-    public int saladID;
-    public int bunID;
-    public int beefID;
+    public int foodID;
 
     void Update()
     {
@@ -70,6 +68,7 @@ public class IngredientInteraction : MonoBehaviour
             Debug.Log("you acquired salad"); //debug
             boxUI.transform.GetChild(0).gameObject.SetActive(true); //sets first child object[0] of Box to active
             inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
+            foodID = 15;
         }
         else
         {
@@ -85,6 +84,7 @@ public class IngredientInteraction : MonoBehaviour
             Debug.Log("you acquired buns"); //debug
             boxUI.transform.GetChild(1).gameObject.SetActive(true); //sets first child object[1] of Box to active
             inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
+            foodID = 25;
         }
         else
         {
@@ -100,6 +100,7 @@ public class IngredientInteraction : MonoBehaviour
             Debug.Log("you acquired beef"); //debug
             boxUI.transform.GetChild(2).gameObject.SetActive(true); //sets first child object[2] of Box to active
             inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
+            foodID = 10;
         }
         else
         {

@@ -10,35 +10,38 @@ public class OrderSystem : MonoBehaviour
     //public GameObject recipeObject;
     public SpriteRenderer spriteColor;
     public Image RecipeImage;
+    public DeliverySystem bagInventory;
+    public int foodValue;
+    public int recipeValue;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
 
     // Update is called once per frame
     void Update()
     {
         //change this back after system completion
-        //if (isRecipeActive == true) //checks if there is a recipe already displayed
-        //{
-        //    recipe(Random.Range(0f, 2)); //generates a random number so that the recipes chosen are random
-        //    Debug.Log("random generated"); //development help
-        //}
-    }
-
-    public void recipeGenerationClick()
-    {
         if (isRecipeActive == false) //checks if there is a recipe already displayed
         {
             recipe(Random.Range(0, 3)); //generates a random number so that the recipes chosen are random
             Debug.Log("random generated"); //development help
+            isRecipeActive = true;
         }
         else
         {
-            Debug.Log("Already have active recipe");
         }
     }
+
+    //public void recipeGenerationClick()
+    //{
+    //    if (isRecipeActive == false) //checks if there is a recipe already displayed
+    //    {
+    //        recipe(Random.Range(0, 3)); //generates a random number so that the recipes chosen are random
+    //        Debug.Log("random generated"); //development help
+    //    }
+    //    else
+    //    {
+    //        Debug.Log("Already have active recipe");
+    //    }
+    //}
 
     public void recipeActivityClick()
     {
@@ -59,20 +62,31 @@ public class OrderSystem : MonoBehaviour
 
         switch (recipeName) //multi selection of recipes depending of random value generated
         {
-            case 0:
+            case 0: //burger
                 RecipeImage.color = Color.red;
+                recipeValue = 50;
                 //spriteColor.color = Color.red;
                 break;
-            case 1:
+            case 1: //single salad
                 RecipeImage.color = Color.green;
+                recipeValue = 15;
                 //spriteColor.color = Color.blue;
                 break;
-            case 2:
+            case 2: //single beef
                 RecipeImage.color = Color.blue;
+                recipeValue = 10;
                 //spriteColor.color = Color.green;
                 break;
             default:
                 break;
+        }
+    }
+
+    public void recipeCheck()
+    {
+        if (foodValue == recipeValue);
+        {
+            isRecipeActive = false;
         }
     }
 }
