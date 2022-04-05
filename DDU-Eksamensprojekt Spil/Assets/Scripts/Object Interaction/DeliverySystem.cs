@@ -17,6 +17,7 @@ public class DeliverySystem : MonoBehaviour
     public bool saladPresent = false;
     public bool bunPresent = false;
     public bool beefPresent = false;
+    public bool tomatoPresent = false;
 
     // Update is called once per frame
     void Update()
@@ -65,6 +66,20 @@ public class DeliverySystem : MonoBehaviour
                     else
                     {
                         Debug.Log("Salad already present");
+                    }
+                    break;
+                case 20: //tomato
+                    if (tomatoPresent == false)
+                    {
+                        tomatoPresent = true;
+                        inventory.maxInventoryActive = false;
+                        Debug.Log("Tomato inserted in bag");
+                        foodValue += 20;
+                        trash.trashCanSingle();
+                    }
+                    else
+                    {
+                        Debug.Log("Tomato already present");
                     }
                     break;
                 default:

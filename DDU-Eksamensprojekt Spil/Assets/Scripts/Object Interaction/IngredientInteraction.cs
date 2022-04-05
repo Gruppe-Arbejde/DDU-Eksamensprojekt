@@ -34,6 +34,9 @@ public class IngredientInteraction : MonoBehaviour
                 case 3: 
                     BeefShelfClick(); //runs BeefShelfClick function
                     break;
+                case 4:
+                    TomatoShelfClick(); //runs BeefShelfClick function
+                    break;
                 default:
                     break;
             }
@@ -110,6 +113,22 @@ public class IngredientInteraction : MonoBehaviour
         }
     }
 
+    public void TomatoShelfClick() //ingredient creation
+    {
+        Debug.Log("shelf clicked"); //debug
+        if (inventory.maxInventoryActive == false) //checks if the player already holds an ingredient
+        {
+            Debug.Log("you acquired tomato"); //debug
+            boxUI.transform.GetChild(3).gameObject.SetActive(true); //sets first child object[0] of Box to active
+            inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
+            interaction.foodID = 20;
+        }
+        else
+        {
+            Debug.Log("inventory is full"); //debug
+            maxInvPopUp(); //runs the maxInvPopUp function
+        }
+    }
     public void maxInvPopUp() //ingredient creation
     {
         if (maxInventoryPopUp.activeInHierarchy == false) //checks if the popup is already active in the game and if not runs the following code

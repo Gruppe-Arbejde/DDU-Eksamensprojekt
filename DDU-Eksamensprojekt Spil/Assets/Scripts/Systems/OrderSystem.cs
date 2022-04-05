@@ -17,6 +17,7 @@ public class OrderSystem : MonoBehaviour
     public GameObject foodText;
 
     public GameObject ingredientList;
+    public GameObject recipePicture;
 
     private void Start()
     {
@@ -28,7 +29,7 @@ public class OrderSystem : MonoBehaviour
         //change this back after system completion
         if (isRecipeActive == false) //checks if there is a recipe already displayed
         {
-            recipe(Random.Range(0, 3)); //generates a random number so that the recipes chosen are random
+            recipe(Random.Range(0, 4)); //generates a random number so that the recipes chosen are random
             Debug.Log("random generated"); //development help
             isRecipeActive = true;
         }
@@ -37,11 +38,14 @@ public class OrderSystem : MonoBehaviour
             if (bagInventory.foodValue == recipeValue)
             {
                 Debug.Log("food made");
-                foodText.SetActive(true);
+                //foodText.SetActive(true);
+
+                foodMadePopUp();
                 isRecipeActive = false;
                 bagInventory.saladPresent = false;
                 bagInventory.bunPresent = false;
                 bagInventory.beefPresent = false;
+                bagInventory.tomatoPresent = false;
                 bagInventory.foodValue = 0;
             }
         }
@@ -80,28 +84,64 @@ public class OrderSystem : MonoBehaviour
         switch (recipeName) //multi selection of recipes depending of random value generated
         {
             case 0: //burger
-                RecipeImage.color = Color.red;
+                //RecipeImage.color = Color.red;
                 //recipeCheck(50);
                 recipeValue = 50;
                 ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Salad\nBun\nBeef";
                 //spriteColor.color = Color.red;
+                recipePicture.transform.GetChild(1).gameObject.SetActive(true);
+                recipePicture.transform.GetChild(2).gameObject.SetActive(false);
+                recipePicture.transform.GetChild(3).gameObject.SetActive(false);
+                recipePicture.transform.GetChild(4).gameObject.SetActive(false);
                 break;
             case 1: //single salad
-                RecipeImage.color = Color.green;
+                //RecipeImage.color = Color.green;
                 //recipeCheck(15);
                 recipeValue = 15;
                 ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Salad";
                 //spriteColor.color = Color.blue;
+                recipePicture.transform.GetChild(1).gameObject.SetActive(false);
+                recipePicture.transform.GetChild(2).gameObject.SetActive(true);
+                recipePicture.transform.GetChild(3).gameObject.SetActive(false);
+                recipePicture.transform.GetChild(4).gameObject.SetActive(false);
                 break;
             case 2: //single beef
-                RecipeImage.color = Color.blue;
+                //RecipeImage.color = Color.blue;
                 //recipeCheck(10)
                 recipeValue = 10;
                 ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Beef";
                 //spriteColor.color = Color.green;
+                recipePicture.transform.GetChild(1).gameObject.SetActive(false);
+                recipePicture.transform.GetChild(2).gameObject.SetActive(false);
+                recipePicture.transform.GetChild(3).gameObject.SetActive(true);
+                recipePicture.transform.GetChild(4).gameObject.SetActive(false);
+                break;
+            case 3: //Tomato
+                //RecipeImage.color = Color.blue;
+                //recipeCheck(10)
+                recipeValue = 20;
+                ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Tomato";
+                //spriteColor.color = Color.green;
+                recipePicture.transform.GetChild(1).gameObject.SetActive(false);
+                recipePicture.transform.GetChild(2).gameObject.SetActive(false);
+                recipePicture.transform.GetChild(3).gameObject.SetActive(false);
+                recipePicture.transform.GetChild(4).gameObject.SetActive(true);
                 break;
             default:
                 break;
+        }
+    }
+
+    public void foodMadePopUp() //ingredient creation
+    {
+        if (foodText.activeInHierarchy == false) //checks if the popup is already active in the game and if not runs the following code
+        {
+            foodText.SetActive(true); //sets the popup to being active and displayed
+            Invoke("foodMadePopUp", 2); //runs the function again after 3 seconds so that the text is only displayed for a certain amount of time
+        }
+        else if (foodText.activeInHierarchy == true) ////checks if the popup is already active in the game and if it is runs the following code
+        {
+            foodText.SetActive(false); //sets the popup to being false and therefore not displayed
         }
     }
 
