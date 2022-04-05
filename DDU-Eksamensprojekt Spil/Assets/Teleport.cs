@@ -5,6 +5,9 @@ using UnityEngine;
 public class Teleport : MonoBehaviour
 {
     bool inFreezer = false;
+    //public Transform target;
+    //public float smoothing;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
@@ -17,6 +20,7 @@ public class Teleport : MonoBehaviour
             }
             else if (inFreezer == true)
             {
+
                 Camera.main.transform.position = new Vector3(0, 0, -10);
                 inFreezer = false;
                 print("TELEPORT TO KITCHEN");
