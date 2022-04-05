@@ -1,88 +1,88 @@
 fileFormatVersion: 2
-guid: 980857750c2f8304688b87f559298fbb
+guid: ace3307b6168d0149a200dc5c2895109
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 5209690975150637577
-    second: TilesetV1_0
+    second: Floor_0
   - first:
       213: -2745878724177357093
-    second: TilesetV1_1
+    second: FloorTile_01
   - first:
       213: 7165155372973649852
-    second: TilesetV1_2
+    second: LeftThinWall_01
   - first:
       213: -182582040194313528
-    second: TilesetV1_3
+    second: RightThinWall_01
   - first:
       213: -4229782662090060763
-    second: TilesetV1_4
+    second: Wall_01
   - first:
       213: 562606797514241902
-    second: TilesetV1_5
+    second: LeftInnerCorner_01
   - first:
       213: -2039663983438874329
-    second: TilesetV1_6
+    second: RightInnerCorner_01
   - first:
       213: -2888162329420069467
-    second: TilesetV1_7
+    second: LeftOuterCorner_01
   - first:
       213: 3739887330792338958
-    second: TilesetV1_8
+    second: RightOuterCorner_01
   - first:
       213: 4706736596005808061
-    second: TilesetV1_9
+    second: WallBlock_02
   - first:
       213: -3804000571824893614
-    second: TilesetV1_10
+    second: WallBlock_01
   - first:
       213: -4714496739411242222
-    second: TilesetV1_11
+    second: FloorTile_02
   - first:
       213: -3621229624537023591
-    second: TilesetV1_12
+    second: Floor_01
   - first:
       213: 5434939353669281572
-    second: TilesetV1_13
+    second: FloorTile_03
   - first:
       213: 4991761463583341637
-    second: TilesetV1_14
+    second: Wall_02
   - first:
       213: 6573359392957096588
-    second: TilesetV1_15
+    second: LeftInnerCorner_02
   - first:
       213: 5667933252336957065
-    second: TilesetV1_16
+    second: RightInnerCorner_02
   - first:
       213: 775730622611770675
-    second: TilesetV1_17
+    second: LeftOuterCorner_02
   - first:
       213: 2135842291417588311
-    second: TilesetV1_18
+    second: RightOuterCorner_02
   - first:
       213: -5229748382436048136
-    second: TilesetV1_19
+    second: Floor_02
   - first:
       213: -3132563630284552328
-    second: TilesetV1_20
+    second: FloorTile_04
   - first:
       213: 3272324394330779067
-    second: TilesetV1_21
+    second: Window_01
   - first:
       213: -5636487322854495872
-    second: TilesetV1_22
+    second: Wall_03
   - first:
       213: 7130473428474340085
-    second: TilesetV1_23
+    second: LeftInnerCorner_03
   - first:
       213: 4003135359755025652
-    second: TilesetV1_24
+    second: RightInnerCorner_03
   - first:
       213: -8336560328528457403
-    second: TilesetV1_25
+    second: LeftOuterCorner_03
   - first:
       213: -7099738443298523132
-    second: TilesetV1_26
+    second: RightOuterCorner_03
   - first:
       213: 2247572460630570198
     second: TilesetV1_27
@@ -97,7 +97,7 @@ TextureImporter:
     second: TilesetV1_30
   - first:
       213: -1409835279196616588
-    second: TilesetV1_31
+    second: Floor_04
   - first:
       213: -3112592225549886033
     second: TilesetV1_32
@@ -116,21 +116,6 @@ TextureImporter:
   - first:
       213: -3334409049325505687
     second: TilesetV1_37
-  - first:
-      213: 8532021217559038356
-    second: TilesetV1_38
-  - first:
-      213: 5101581220283465614
-    second: TilesetV1_39
-  - first:
-      213: 8989080411871527718
-    second: TilesetV1_40
-  - first:
-      213: 3082311519974204248
-    second: TilesetV1_41
-  - first:
-      213: -4199114070750589684
-    second: TilesetV1_42
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -220,7 +205,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TilesetV1_0
+      name: Floor_0
       rect:
         serializedVersion: 2
         x: 22
@@ -228,7 +213,7 @@ TextureImporter:
         width: 23
         height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,7 +226,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_1
+      name: FloorTile_01
       rect:
         serializedVersion: 2
         x: 54
@@ -249,7 +234,7 @@ TextureImporter:
         width: 12
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,7 +247,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_2
+      name: LeftThinWall_01
       rect:
         serializedVersion: 2
         x: 81
@@ -270,7 +255,7 @@ TextureImporter:
         width: 5
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,7 +268,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_3
+      name: RightThinWall_01
       rect:
         serializedVersion: 2
         x: 90
@@ -291,7 +276,7 @@ TextureImporter:
         width: 5
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,7 +289,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_4
+      name: Wall_01
       rect:
         serializedVersion: 2
         x: 105
@@ -312,7 +297,7 @@ TextureImporter:
         width: 12
         height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,7 +310,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_5
+      name: LeftInnerCorner_01
       rect:
         serializedVersion: 2
         x: 122
@@ -333,7 +318,7 @@ TextureImporter:
         width: 12
         height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,7 +331,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_6
+      name: RightInnerCorner_01
       rect:
         serializedVersion: 2
         x: 139
@@ -354,7 +339,7 @@ TextureImporter:
         width: 12
         height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -367,7 +352,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_7
+      name: LeftOuterCorner_01
       rect:
         serializedVersion: 2
         x: 156
@@ -375,7 +360,7 @@ TextureImporter:
         width: 12
         height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -388,7 +373,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_8
+      name: RightOuterCorner_01
       rect:
         serializedVersion: 2
         x: 173
@@ -396,7 +381,7 @@ TextureImporter:
         width: 12
         height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,7 +394,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_9
+      name: WallBlock_02
       rect:
         serializedVersion: 2
         x: 233
@@ -417,7 +402,7 @@ TextureImporter:
         width: 13
         height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,7 +415,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_10
+      name: WallBlock_01
       rect:
         serializedVersion: 2
         x: 256
@@ -438,7 +423,7 @@ TextureImporter:
         width: 82
         height: 45
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,7 +436,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_11
+      name: FloorTile_02
       rect:
         serializedVersion: 2
         x: 54
@@ -459,7 +444,7 @@ TextureImporter:
         width: 12
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -472,7 +457,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_12
+      name: Floor_01
       rect:
         serializedVersion: 2
         x: 22
@@ -480,7 +465,7 @@ TextureImporter:
         width: 23
         height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -493,7 +478,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_13
+      name: FloorTile_03
       rect:
         serializedVersion: 2
         x: 54
@@ -501,7 +486,7 @@ TextureImporter:
         width: 12
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -514,7 +499,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_14
+      name: Wall_02
       rect:
         serializedVersion: 2
         x: 105
@@ -522,7 +507,7 @@ TextureImporter:
         width: 12
         height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -535,7 +520,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_15
+      name: LeftInnerCorner_02
       rect:
         serializedVersion: 2
         x: 122
@@ -543,7 +528,7 @@ TextureImporter:
         width: 12
         height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -556,7 +541,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_16
+      name: RightInnerCorner_02
       rect:
         serializedVersion: 2
         x: 139
@@ -564,7 +549,7 @@ TextureImporter:
         width: 12
         height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -577,7 +562,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_17
+      name: LeftOuterCorner_02
       rect:
         serializedVersion: 2
         x: 156
@@ -585,7 +570,7 @@ TextureImporter:
         width: 12
         height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -598,7 +583,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_18
+      name: RightOuterCorner_02
       rect:
         serializedVersion: 2
         x: 173
@@ -606,7 +591,7 @@ TextureImporter:
         width: 12
         height: 27
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -619,7 +604,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_19
+      name: Floor_02
       rect:
         serializedVersion: 2
         x: 22
@@ -627,7 +612,7 @@ TextureImporter:
         width: 23
         height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -640,7 +625,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_20
+      name: FloorTile_04
       rect:
         serializedVersion: 2
         x: 54
@@ -648,7 +633,7 @@ TextureImporter:
         width: 12
         height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -661,7 +646,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_21
+      name: Window_01
       rect:
         serializedVersion: 2
         x: 233
@@ -669,7 +654,7 @@ TextureImporter:
         width: 25
         height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -682,7 +667,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_22
+      name: Wall_03
       rect:
         serializedVersion: 2
         x: 105
@@ -690,7 +675,7 @@ TextureImporter:
         width: 12
         height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -703,7 +688,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_23
+      name: LeftInnerCorner_03
       rect:
         serializedVersion: 2
         x: 122
@@ -711,7 +696,7 @@ TextureImporter:
         width: 12
         height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -724,7 +709,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_24
+      name: RightInnerCorner_03
       rect:
         serializedVersion: 2
         x: 139
@@ -732,7 +717,7 @@ TextureImporter:
         width: 12
         height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -745,7 +730,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_25
+      name: LeftOuterCorner_03
       rect:
         serializedVersion: 2
         x: 156
@@ -753,7 +738,7 @@ TextureImporter:
         width: 12
         height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -766,7 +751,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_26
+      name: RightOuterCorner_03
       rect:
         serializedVersion: 2
         x: 173
@@ -774,7 +759,7 @@ TextureImporter:
         width: 12
         height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -795,7 +780,7 @@ TextureImporter:
         width: 12
         height: 4
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -816,7 +801,7 @@ TextureImporter:
         width: 12
         height: 4
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -837,7 +822,7 @@ TextureImporter:
         width: 12
         height: 4
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -858,7 +843,7 @@ TextureImporter:
         width: 12
         height: 4
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -871,7 +856,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilesetV1_31
+      name: Floor_04
       rect:
         serializedVersion: 2
         x: 22
@@ -879,7 +864,7 @@ TextureImporter:
         width: 23
         height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -900,7 +885,7 @@ TextureImporter:
         width: 12
         height: 4
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -917,11 +902,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 190
-        y: 81
+        y: 130
         width: 12
-        height: 3
+        height: 2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -937,12 +922,12 @@ TextureImporter:
       name: TilesetV1_34
       rect:
         serializedVersion: 2
-        x: 207
-        y: 97
+        x: 190
+        y: 123
         width: 12
-        height: 3
+        height: 2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -958,12 +943,12 @@ TextureImporter:
       name: TilesetV1_35
       rect:
         serializedVersion: 2
-        x: 207
-        y: 89
+        x: 190
+        y: 116
         width: 12
-        height: 3
+        height: 2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -979,12 +964,12 @@ TextureImporter:
       name: TilesetV1_36
       rect:
         serializedVersion: 2
-        x: 190
-        y: 89
+        x: 207
+        y: 123
         width: 12
-        height: 3
+        height: 2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1000,12 +985,12 @@ TextureImporter:
       name: TilesetV1_37
       rect:
         serializedVersion: 2
-        x: 190
-        y: 97
+        x: 207
+        y: 130
         width: 12
-        height: 3
+        height: 2
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1013,111 +998,6 @@ TextureImporter:
       bones: []
       spriteID: 963fa17d2acc9b1d0800000000000000
       internalID: -3334409049325505687
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilesetV1_38
-      rect:
-        serializedVersion: 2
-        x: 190
-        y: 116
-        width: 12
-        height: 2
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 499c3b0c714d76670800000000000000
-      internalID: 8532021217559038356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilesetV1_39
-      rect:
-        serializedVersion: 2
-        x: 190
-        y: 123
-        width: 12
-        height: 2
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8fbccb27157cc640800000000000000
-      internalID: 5101581220283465614
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilesetV1_40
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 123
-        width: 12
-        height: 2
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62346072201afbc70800000000000000
-      internalID: 8989080411871527718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilesetV1_41
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 130
-        width: 12
-        height: 2
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85328232ff196ca20800000000000000
-      internalID: 3082311519974204248
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilesetV1_42
-      rect:
-        serializedVersion: 2
-        x: 190
-        y: 130
-        width: 12
-        height: 2
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0d01912000c9b5c0800000000000000
-      internalID: -4199114070750589684
       vertices: []
       indices: 
       edges: []

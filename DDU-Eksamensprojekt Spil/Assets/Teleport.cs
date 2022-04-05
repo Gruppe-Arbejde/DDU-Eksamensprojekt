@@ -5,8 +5,11 @@ using UnityEngine;
 public class Teleport : MonoBehaviour
 {
     bool inFreezer = false;
-    //public Transform target;
-    //public float smoothing;
+
+    public Transform kitchenTarget;
+    public Transform freezerTarget;
+    public float smoothing;
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -14,14 +17,15 @@ public class Teleport : MonoBehaviour
         {
             if (inFreezer == false)
             {
-                Camera.main.transform.position = new Vector3(0, -15, -10);
+                Vector3 freezerPosition = new Vector3(freezerTarget.position.x, freezerTarget.position.y, transform.position.z);
+                Camera.main.transform.position = Vector3.Lerp(transform.position, freezerPosition, smoothing*Time.deltaTime);
                 inFreezer = true;
                 print("TELEPORT TO FREEZER");
             }
             else if (inFreezer == true)
             {
-
-                Camera.main.transform.position = new Vector3(0, 0, -10);
+                Vector3 kitchenPosition = new Vector3(kitchenTarget.position.x, kitchenTarget.position.y, transform.position.z);
+                Camera.main.transform.position = Vector3.Lerp(transform.position, kitchenPosition, smoothing*Time.deltaTime);
                 inFreezer = false;
                 print("TELEPORT TO KITCHEN");
             }
