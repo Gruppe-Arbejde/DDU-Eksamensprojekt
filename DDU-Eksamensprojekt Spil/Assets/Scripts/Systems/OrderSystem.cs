@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +16,11 @@ public class OrderSystem : MonoBehaviour
     public int recipeValue;
     public GameObject foodText;
 
+    public GameObject ingredientList;
+
+    private void Start()
+    {
+    }
 
     // Update is called once per frame
     void Update()
@@ -77,18 +83,21 @@ public class OrderSystem : MonoBehaviour
                 RecipeImage.color = Color.red;
                 //recipeCheck(50);
                 recipeValue = 50;
+                ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Salad\nBun\nBeef";
                 //spriteColor.color = Color.red;
                 break;
             case 1: //single salad
                 RecipeImage.color = Color.green;
                 //recipeCheck(15);
                 recipeValue = 15;
+                ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Salad";
                 //spriteColor.color = Color.blue;
                 break;
             case 2: //single beef
                 RecipeImage.color = Color.blue;
                 //recipeCheck(10)
                 recipeValue = 10;
+                ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Beef";
                 //spriteColor.color = Color.green;
                 break;
             default:
