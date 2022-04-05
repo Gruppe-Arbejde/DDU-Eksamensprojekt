@@ -7,11 +7,18 @@ public class TrashCanScript : MonoBehaviour
     bool pickUpAllowed;
 
     public GameObject popup;
-    public GameObject ingredientInteraction;
+    public IngredientInteraction interaction;
+    public MaxInventoryManager inventory;
 
-    public void TrashCanClick()
+    void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.E) && pickUpAllowed)
+        {
+            interaction.boxUI.transform.GetChild(0).gameObject.SetActive(false);
+            interaction.boxUI.transform.GetChild(1).gameObject.SetActive(false);
+            interaction.boxUI.transform.GetChild(2).gameObject.SetActive(false);
+            inventory.maxInventoryActive = false;
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
