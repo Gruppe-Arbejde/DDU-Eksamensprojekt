@@ -9,15 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: d489feab3a5332b4fb6080a173859072
   - enabled: 1
-    path: Assets/Scenes/Kitchen.unity
-    guid: dc9224877f8617f47869606140c1c075
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Freezer.unity
-    guid: e38a6065aad59d2439aee8f2c9356ed3
-  - enabled: 1
-    path: Assets/Scenes/Storage_Room.unity
-    guid: 933da26c1dfeb7b45b925ca0b4992988
+    path: Assets/Scenes/GameTester.unity
+    guid: 3991d60358c9c4148876c4f6c7cc67b7
   m_configObjects: {}
