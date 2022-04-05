@@ -8,11 +8,12 @@ public class OrderSystem : MonoBehaviour
     [SerializeField]
     public bool isRecipeActive;
     //public GameObject recipeObject;
-    public SpriteRenderer spriteColor;
+    //public SpriteRenderer spriteColor;
     public Image RecipeImage;
     public DeliverySystem bagInventory;
-    public int foodValue;
+    //public int foodValue;
     public int recipeValue;
+    public GameObject foodText;
 
 
     // Update is called once per frame
@@ -27,6 +28,16 @@ public class OrderSystem : MonoBehaviour
         }
         else
         {
+            if (bagInventory.foodValue == recipeValue)
+            {
+                Debug.Log("food made");
+                foodText.SetActive(true);
+                isRecipeActive = false;
+                bagInventory.saladPresent = false;
+                bagInventory.bunPresent = false;
+                bagInventory.beefPresent = false;
+                bagInventory.foodValue = 0;
+            }
         }
     }
 
@@ -64,16 +75,19 @@ public class OrderSystem : MonoBehaviour
         {
             case 0: //burger
                 RecipeImage.color = Color.red;
+                //recipeCheck(50);
                 recipeValue = 50;
                 //spriteColor.color = Color.red;
                 break;
             case 1: //single salad
                 RecipeImage.color = Color.green;
+                //recipeCheck(15);
                 recipeValue = 15;
                 //spriteColor.color = Color.blue;
                 break;
             case 2: //single beef
                 RecipeImage.color = Color.blue;
+                //recipeCheck(10)
                 recipeValue = 10;
                 //spriteColor.color = Color.green;
                 break;
@@ -82,11 +96,16 @@ public class OrderSystem : MonoBehaviour
         }
     }
 
-    public void recipeCheck()
-    {
-        if (foodValue == recipeValue);
-        {
-            isRecipeActive = false;
-        }
-    }
+    //public void recipeCheck(int recipeValue)
+    //{
+    //    if (bagInventory.foodValue == recipeValue);
+    //    {
+    //        Debug.Log("food made");
+    //        foodText.SetActive(true);
+    //        isRecipeActive = false;
+    //        bagInventory.saladPresent = false;
+    //        bagInventory.bunPresent = false;
+    //        bagInventory.beefPresent = false;
+    //    }
+    //}
 }

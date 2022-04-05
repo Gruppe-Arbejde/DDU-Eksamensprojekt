@@ -21,9 +21,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
         {
-            print($"Horizontal: {movement.x}");
-            print($"Vertical: {movement.y}");
-            print($"Speed: {movement.sqrMagnitude}");
             animator.SetFloat("Last_Horizontal", Input.GetAxisRaw("Horizontal"));
             animator.SetFloat("Last_Vertical", Input.GetAxisRaw("Vertical"));
         }

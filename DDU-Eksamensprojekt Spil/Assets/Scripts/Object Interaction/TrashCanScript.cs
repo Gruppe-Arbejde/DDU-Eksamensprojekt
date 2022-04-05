@@ -40,4 +40,12 @@ public class TrashCanScript : MonoBehaviour
             Debug.Log("trigger exit");
         }
     }
+
+    public void trashCanSingle()
+    {
+        interaction.boxUI.transform.GetChild(0).gameObject.SetActive(false);
+        interaction.boxUI.transform.GetChild(1).gameObject.SetActive(false);
+        interaction.boxUI.transform.GetChild(2).gameObject.SetActive(false);
+        inventory.maxInventoryActive = false;
+    }
 }

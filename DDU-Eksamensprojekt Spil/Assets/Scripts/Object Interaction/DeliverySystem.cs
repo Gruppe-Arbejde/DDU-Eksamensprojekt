@@ -9,11 +9,14 @@ public class DeliverySystem : MonoBehaviour
     public GameObject popup;
     public MaxInventoryManager inventory;
     public IngredientInteraction interaction;
-    public OrderSystem orderSystem;
+ 
+    public TrashCanScript trash;
 
-    public bool saladPresent;
-    public bool bunPresent;
-    public bool beefPresent;
+    public int foodValue;
+
+    public bool saladPresent = false;
+    public bool bunPresent = false;
+    public bool beefPresent = false;
 
     // Update is called once per frame
     void Update()
@@ -23,23 +26,46 @@ public class DeliverySystem : MonoBehaviour
             switch (interaction.foodID)
             {
                 case 15: //salad
-                    saladPresent = true;
-                    inventory.maxInventoryActive = false;
-                    orderSystem.foodValue += 15;
-
-                    Debug.Log("Salad inserted in bag");
+                    if (saladPresent == false)
+                    {
+                        saladPresent = true;
+                        inventory.maxInventoryActive = false;
+                        foodValue += 15;
+                        Debug.Log("Salad inserted in bag");
+                        trash.trashCanSingle();
+                    }
+                    else
+                    {
+                        Debug.Log("Salad already present");
+                    }
                     break;
                 case 25: //bun
-                    bunPresent = true;
-                    inventory.maxInventoryActive = false;
-                    Debug.Log("Bun inserted in bag");
-                    orderSystem.foodValue += 25;
+                    if (bunPresent == false)
+                    {
+                        bunPresent = true;
+                        inventory.maxInventoryActive = false;
+                        Debug.Log("Bun inserted in bag");
+                        foodValue += 25;
+                        trash.trashCanSingle();
+                    }
+                    else
+                    {
+                        Debug.Log("Salad already present");
+                    }
                     break;
                 case 10: //beef
-                    beefPresent = true;
-                    inventory.maxInventoryActive = false;
-                    Debug.Log("Beef inserted in bag");
-                    orderSystem.foodValue += 10;
+                    if (beefPresent == false)
+                    {
+                        beefPresent = true;
+                        inventory.maxInventoryActive = false;
+                        Debug.Log("Beef inserted in bag");
+                        foodValue += 10;
+                        trash.trashCanSingle();
+                    }
+                    else
+                    {
+                        Debug.Log("Salad already present");
+                    }
                     break;
                 default:
                     break;
