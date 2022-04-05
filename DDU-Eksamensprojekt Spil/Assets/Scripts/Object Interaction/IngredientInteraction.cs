@@ -110,14 +110,14 @@ public class IngredientInteraction : MonoBehaviour
 
     public void maxInvPopUp() //ingredient creation
     {
-        if (maxInventoryPopUp.activeInHierarchy == false) //checks if the popup is already active and if not
+        if (maxInventoryPopUp.activeInHierarchy == false) //checks if the popup is already active in the game and if not runs the following code
         {
-            maxInventoryPopUp.SetActive(true);
-            Invoke("maxInvPopUp", 3);
+            maxInventoryPopUp.SetActive(true); //sets the popup to being active and displayed
+            Invoke("maxInvPopUp", 3); //runs the function again after 3 seconds so that the text is only displayed for a certain amount of time
         }
-        else if (maxInventoryPopUp.activeInHierarchy == true)
+        else if (maxInventoryPopUp.activeInHierarchy == true) ////checks if the popup is already active in the game and if it is runs the following code
         {
-            maxInventoryPopUp.SetActive(false);
+            maxInventoryPopUp.SetActive(false); //sets the popup to being false and therefore not displayed
         }
     }
 }
