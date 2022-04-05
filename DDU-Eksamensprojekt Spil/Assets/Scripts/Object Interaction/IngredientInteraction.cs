@@ -8,12 +8,12 @@ public class IngredientInteraction : MonoBehaviour
 {
     //Variable creation
     public GameObject boxUI;
-
-    public bool maxInventory;
-    bool pickUpAllowed;
-
     public GameObject popup;
     public GameObject maxInventoryPopUp;
+    public GameObject maxInventoryManager;
+
+    public bool maxInventoryActive;
+    bool pickUpAllowed;
 
     public int generatorID;
     public int saladID;
@@ -65,11 +65,11 @@ public class IngredientInteraction : MonoBehaviour
     public void SaladShelfClick()
     {
         Debug.Log("shelf clicked");
-        if (maxInventory == false)
+        if (maxInventoryManager.GetComponent<maxInvetoryActive>() == false)
         {
             Debug.Log("you acquired salad");
             boxUI.transform.GetChild(0).gameObject.SetActive(true); //sets first child object[0] of Box to active
-            maxInventory = true;
+            maxInventoryActive = true;
         }
         else
         {
@@ -80,11 +80,11 @@ public class IngredientInteraction : MonoBehaviour
     public void BunShelfClick()
     {
         Debug.Log("shelf clicked");
-        if (maxInventory == false)
+        if (maxInventoryActive == false)
         {
             Debug.Log("you acquired buns");
             boxUI.transform.GetChild(1).gameObject.SetActive(true); //sets first child object[1] of Box to active
-            maxInventory = true;
+            maxInventoryActive = true;
         }
         else
         {
@@ -95,11 +95,11 @@ public class IngredientInteraction : MonoBehaviour
     public void BeefShelfClick()
     {
         Debug.Log("shelf clicked");
-        if (maxInventory == false)
+        if (maxInventoryActive == false)
         {
             Debug.Log("you acquired beef");
             boxUI.transform.GetChild(2).gameObject.SetActive(true); //sets first child object[2] of Box to active
-            maxInventory = true;
+            maxInventoryActive = true;
         }
         else
         {
