@@ -86,6 +86,10 @@ public class DeliverySystem : MonoBehaviour
                     break;
             }
         }
+        if (Input.GetKeyDown(KeyCode.E) && pickUpAllowed)
+        {
+
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
