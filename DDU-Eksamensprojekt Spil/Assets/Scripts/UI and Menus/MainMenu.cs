@@ -21,6 +21,11 @@ public class MainMenu : MonoBehaviour
         ChangeScreenRes();
     }
 
+    public void GameOverBackButtonPress()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     void ChangeScreenRes()
     {
         // Getting the name of what button we've pressed

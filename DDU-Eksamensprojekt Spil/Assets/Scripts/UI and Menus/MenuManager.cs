@@ -52,6 +52,11 @@ public class MenuManager : MonoBehaviour
         LevelMenu.SetActive(false);
         Debug.Log("How To");
     }
+    public void GameOverBackButtonPress()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void SetVolume(float volume)
     {
         MasterVolume.SetFloat("MasterVolume", volume);
