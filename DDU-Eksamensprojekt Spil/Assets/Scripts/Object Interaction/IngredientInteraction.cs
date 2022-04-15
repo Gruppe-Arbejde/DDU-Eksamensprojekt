@@ -39,7 +39,13 @@ public class IngredientInteraction : MonoBehaviour
                     BeefShelfClick(); //runs BeefShelfClick function
                     break;
                 case 4:
-                    TomatoShelfClick(); //runs BeefShelfClick function
+                    TomatoShelfClick(); //runs TomatoShelfClick function
+                    break;
+                case 5:
+                    CookerClick(); //runs CookerClick function
+                    break;
+                case 6:
+                    CuttingBoardClick(); //runs CuttingBoardClick function
                     break;
                 default:
                     break;
@@ -51,6 +57,7 @@ public class IngredientInteraction : MonoBehaviour
         if (collision.gameObject.name.Equals("Player")) //checks if the name of the object who hold the collider is "Player"
         {
             popup.SetActive(true); //sets the popup gameobject to active
+            popup.GetComponent<TMPro.TextMeshProUGUI>().text = "E to interact with object";
             pickUpAllowed = true; //sets the bool pickUpAllowed to true so that you can fulfill one of the conditions in the update loop
             Debug.Log("trigger enter"); //debug
         }
@@ -137,6 +144,22 @@ public class IngredientInteraction : MonoBehaviour
             maxInvPopUp(); //runs the maxInvPopUp function
         }
     }
+
+    public void CookerClick()
+    {
+        Debug.Log("cooker clicked"); //debug
+
+        //type code here
+
+    }
+
+    public void CuttingBoardClick()
+    {
+        Debug.Log("cuttingboard clicked"); //debug
+
+        //type code here
+    }
+
     public void maxInvPopUp() //ingredient creation
     {
         if (maxInventoryPopUp.activeInHierarchy == false) //checks if the popup is already active in the game and if not runs the following code

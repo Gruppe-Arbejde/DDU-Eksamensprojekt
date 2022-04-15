@@ -54,7 +54,7 @@ public class OrderSystem : MonoBehaviour
                 deliverySystem.beefPresent = false;
                 deliverySystem.tomatoPresent = false;
                 deliverySystem.foodValue = 0;
-                deathTimer.time = 15;
+                deathTimer.time = 15; //sets the start value of timer after completing order alternatively += could be used to make it more dynamic
                 scoreSystem.ScoreIncrease();
                 dataHandling.RecipeChecklistColorCorrect();
             }

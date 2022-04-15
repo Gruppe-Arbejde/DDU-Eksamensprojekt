@@ -15,9 +15,6 @@ public class InsanityScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //insanityLight = GetComponent<Light2D>(); //gets light component from gameObject
-        //outerRadius = insanityLight.pointLightOuterRadius; //sets outerRadious variable to the light objects current outer radius
-        //Invoke("moreInsane", 1); //invoke the specified function after a second
     }
 
     public void insanityStart()

@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 public class DeathTimer : MonoBehaviour
 {
     public GameObject timerText;
-    public float time;
+    public float time; 
 
     // Start is called before the first frame update
     void Start()
     {
-        time = 15;
+        time = 140; //start value of countdown
         Invoke("Timer", 1);
     }
 
