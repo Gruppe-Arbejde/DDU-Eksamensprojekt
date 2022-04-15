@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Teleport : MonoBehaviour
 {
-    bool inFreezer = false;
+    public bool inFreezer = false;
 
     public Transform kitchenTarget;
     public Transform freezerTarget;
     public float smoothing;
 
+    public InsanityScript insanity;
+    public GameObject insanityScript;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,6 +23,8 @@ public class Teleport : MonoBehaviour
                 Camera.main.transform.position = Vector3.Lerp(transform.position, freezerPosition, smoothing*Time.deltaTime);
                 inFreezer = true;
                 print("TELEPORT TO FREEZER");
+                insanityScript.SetActive(true);
+                insanity.insanityStart();
             }
             else if (inFreezer == true)
             {
@@ -28,6 +32,7 @@ public class Teleport : MonoBehaviour
                 Camera.main.transform.position = Vector3.Lerp(transform.position, kitchenPosition, smoothing*Time.deltaTime);
                 inFreezer = false;
                 print("TELEPORT TO KITCHEN");
+
             }
         }
     }

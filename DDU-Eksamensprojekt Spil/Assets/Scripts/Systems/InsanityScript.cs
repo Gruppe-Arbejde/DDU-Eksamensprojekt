@@ -8,17 +8,25 @@ public class InsanityScript : MonoBehaviour
 {
     //variable creation
     Light2D insanityLight;
-    private float outerRadius;
-
+    private double outerRadius;
+    public Teleport teleport;
+    public GameObject insanityScript;
 
     // Start is called before the first frame update
     void Start()
+    {
+        //insanityLight = GetComponent<Light2D>(); //gets light component from gameObject
+        //outerRadius = insanityLight.pointLightOuterRadius; //sets outerRadious variable to the light objects current outer radius
+        //Invoke("moreInsane", 1); //invoke the specified function after a second
+    }
+
+    public void insanityStart()
     {
         insanityLight = GetComponent<Light2D>(); //gets light component from gameObject
         outerRadius = insanityLight.pointLightOuterRadius; //sets outerRadious variable to the light objects current outer radius
         Invoke("moreInsane", 1); //invoke the specified function after a second
     }
-  
+
     // Update is called once per frame
     void Update()
     {
@@ -30,7 +38,14 @@ public class InsanityScript : MonoBehaviour
 
     void moreInsane() //insanity function
     {
-        insanityLight.pointLightOuterRadius += -1; //slowly subtract a value from the lights outerRadius
-        Invoke("moreInsane", 1); //invoke the function again after 1 second
+        if (teleport.inFreezer == true)
+        {
+            insanityLight.pointLightOuterRadius += -0.1f; //slowly subtract a value from the lights outerRadius
+            Invoke("moreInsane", 1); //invoke the function again after 1 second
+        }
+        else if (teleport.inFreezer == false)
+        {
+            insanityScript.SetActive(false);
+        }
     }
 }

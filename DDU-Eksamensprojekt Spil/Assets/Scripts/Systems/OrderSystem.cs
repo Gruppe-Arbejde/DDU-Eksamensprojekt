@@ -14,9 +14,15 @@ public class OrderSystem : MonoBehaviour
     public int recipeValue;
     public int recipeID;
 
+    public Sprite hamBurger;
+    public Sprite salad;
+    public Sprite beef;
+    public Sprite tomato;
+
     public GameObject foodText;
     public GameObject ingredientList;
-    public GameObject recipePicture;
+    //public GameObject recipePicture;
+    public GameObject FoodPicture;
 
     private void Start()
     {
@@ -86,45 +92,53 @@ public class OrderSystem : MonoBehaviour
 
         switch (recipeName) //multi selection of recipes depending of random value generated
         {
-            case 0: //burger
+            case 0: //burger (salad, bun, beef)
                 //RecipeImage.color = Color.red;
                 recipeValue = 50;
-                ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Salad\nBun\nBeef"; 
+                ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Salad\nBun\nBeef";
 
-                recipePicture.transform.GetChild(1).gameObject.SetActive(true);
-                recipePicture.transform.GetChild(2).gameObject.SetActive(false);
-                recipePicture.transform.GetChild(3).gameObject.SetActive(false);
-                recipePicture.transform.GetChild(4).gameObject.SetActive(false);
+                FoodPicture.GetComponent<Image>().sprite = hamBurger;
+
+                //recipePicture.transform.GetChild(1).gameObject.SetActive(true);
+                //recipePicture.transform.GetChild(2).gameObject.SetActive(false);
+                //recipePicture.transform.GetChild(3).gameObject.SetActive(false);
+                //recipePicture.transform.GetChild(4).gameObject.SetActive(false);
                 recipeID = 0;
                 break;
             case 1: //single salad
                 //RecipeImage.color = Color.green;
                 recipeValue = 15;
                 ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Salad";
-                recipePicture.transform.GetChild(1).gameObject.SetActive(false);
-                recipePicture.transform.GetChild(2).gameObject.SetActive(true);
-                recipePicture.transform.GetChild(3).gameObject.SetActive(false);
-                recipePicture.transform.GetChild(4).gameObject.SetActive(false);
+                FoodPicture.GetComponent<Image>().sprite = salad;
+
+                //recipePicture.transform.GetChild(1).gameObject.SetActive(false);
+                //recipePicture.transform.GetChild(2).gameObject.SetActive(true);
+                //recipePicture.transform.GetChild(3).gameObject.SetActive(false);
+                //recipePicture.transform.GetChild(4).gameObject.SetActive(false);
                 recipeID = 1;
                 break;
             case 2: //single beef
                 //RecipeImage.color = Color.blue;
                 recipeValue = 10;
                 ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Beef";
-                recipePicture.transform.GetChild(1).gameObject.SetActive(false);
-                recipePicture.transform.GetChild(2).gameObject.SetActive(false);
-                recipePicture.transform.GetChild(3).gameObject.SetActive(true);
-                recipePicture.transform.GetChild(4).gameObject.SetActive(false);
+                FoodPicture.GetComponent<Image>().sprite = beef;
+
+                //recipePicture.transform.GetChild(1).gameObject.SetActive(false);
+                //recipePicture.transform.GetChild(2).gameObject.SetActive(false);
+                //recipePicture.transform.GetChild(3).gameObject.SetActive(true);
+                //recipePicture.transform.GetChild(4).gameObject.SetActive(false);
                 recipeID = 2;
                 break;
             case 3: //Tomato
                 //RecipeImage.color = Color.blue;
                 recipeValue = 20;
                 ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Tomato";
-                recipePicture.transform.GetChild(1).gameObject.SetActive(false);
-                recipePicture.transform.GetChild(2).gameObject.SetActive(false);
-                recipePicture.transform.GetChild(3).gameObject.SetActive(false);
-                recipePicture.transform.GetChild(4).gameObject.SetActive(true);
+                FoodPicture.GetComponent<Image>().sprite = tomato;
+
+                //recipePicture.transform.GetChild(1).gameObject.SetActive(false);
+                //recipePicture.transform.GetChild(2).gameObject.SetActive(false);
+                //recipePicture.transform.GetChild(3).gameObject.SetActive(false);
+                //recipePicture.transform.GetChild(4).gameObject.SetActive(true);
                 recipeID = 3;
                 break;
             default:
