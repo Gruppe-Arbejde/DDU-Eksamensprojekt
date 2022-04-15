@@ -10,6 +10,8 @@ public class OrderSystem : MonoBehaviour
     public bool isRecipeActive;
     public Image RecipeImage;
     public DeliverySystem bagInventory;
+    public DeathTimer deathTimer;
+    public ScoreSystem scoreSystem;
 
     public int recipeValue;
     public int recipeID;
@@ -69,6 +71,8 @@ public class OrderSystem : MonoBehaviour
                 bagInventory.beefPresent = false;
                 bagInventory.tomatoPresent = false;
                 bagInventory.foodValue = 0;
+                deathTimer.time = 15;
+                scoreSystem.ScoreIncrease();
             }
         }
     }
@@ -96,13 +100,7 @@ public class OrderSystem : MonoBehaviour
                 //RecipeImage.color = Color.red;
                 recipeValue = 50;
                 ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Salad\nBun\nBeef";
-
                 FoodPicture.GetComponent<Image>().sprite = hamBurger;
-
-                //recipePicture.transform.GetChild(1).gameObject.SetActive(true);
-                //recipePicture.transform.GetChild(2).gameObject.SetActive(false);
-                //recipePicture.transform.GetChild(3).gameObject.SetActive(false);
-                //recipePicture.transform.GetChild(4).gameObject.SetActive(false);
                 recipeID = 0;
                 break;
             case 1: //single salad
@@ -110,11 +108,6 @@ public class OrderSystem : MonoBehaviour
                 recipeValue = 15;
                 ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Salad";
                 FoodPicture.GetComponent<Image>().sprite = salad;
-
-                //recipePicture.transform.GetChild(1).gameObject.SetActive(false);
-                //recipePicture.transform.GetChild(2).gameObject.SetActive(true);
-                //recipePicture.transform.GetChild(3).gameObject.SetActive(false);
-                //recipePicture.transform.GetChild(4).gameObject.SetActive(false);
                 recipeID = 1;
                 break;
             case 2: //single beef
@@ -122,11 +115,6 @@ public class OrderSystem : MonoBehaviour
                 recipeValue = 10;
                 ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Beef";
                 FoodPicture.GetComponent<Image>().sprite = beef;
-
-                //recipePicture.transform.GetChild(1).gameObject.SetActive(false);
-                //recipePicture.transform.GetChild(2).gameObject.SetActive(false);
-                //recipePicture.transform.GetChild(3).gameObject.SetActive(true);
-                //recipePicture.transform.GetChild(4).gameObject.SetActive(false);
                 recipeID = 2;
                 break;
             case 3: //Tomato
@@ -134,11 +122,6 @@ public class OrderSystem : MonoBehaviour
                 recipeValue = 20;
                 ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Tomato";
                 FoodPicture.GetComponent<Image>().sprite = tomato;
-
-                //recipePicture.transform.GetChild(1).gameObject.SetActive(false);
-                //recipePicture.transform.GetChild(2).gameObject.SetActive(false);
-                //recipePicture.transform.GetChild(3).gameObject.SetActive(false);
-                //recipePicture.transform.GetChild(4).gameObject.SetActive(true);
                 recipeID = 3;
                 break;
             default:

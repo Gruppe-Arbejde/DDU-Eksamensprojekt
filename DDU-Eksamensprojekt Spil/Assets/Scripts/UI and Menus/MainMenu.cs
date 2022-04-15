@@ -25,6 +25,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+    public void GameOverPlayButtonPress()
+    {
+        SceneManager.LoadScene(1);
+    }
 
     void ChangeScreenRes()
     {

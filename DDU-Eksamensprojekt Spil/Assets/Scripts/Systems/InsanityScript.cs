@@ -32,7 +32,7 @@ public class InsanityScript : MonoBehaviour
     {
         if (insanityLight.pointLightOuterRadius <= 1) //if the light gets too dim then execute the following code
         {
-            SceneManager.LoadScene(0); //the player is killed and sent back to the main menu
+            SceneManager.LoadScene(2); //the player is killed and sent back to the main menu
         }
     }
 
