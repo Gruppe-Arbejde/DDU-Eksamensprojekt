@@ -9,10 +9,11 @@ public class DeliverySystem : MonoBehaviour
     public GameObject popup;
     public MaxInventoryManager inventory;
     public IngredientInteraction interaction;
- 
+    public DataHandling dataHandling;
     public TrashCanScript trash;
 
     public int foodValue;
+    public int lastFoodInserted;
 
     public bool saladPresent = false;
     public bool bunPresent = false;
@@ -34,6 +35,8 @@ public class DeliverySystem : MonoBehaviour
                         foodValue += 15;
                         Debug.Log("Salad inserted in bag");
                         trash.trashCanSingle();
+                        lastFoodInserted = 15;
+                        dataHandling.RecipeCheckHandling();
                     }
                     else
                     {
@@ -48,6 +51,8 @@ public class DeliverySystem : MonoBehaviour
                         Debug.Log("Bun inserted in bag");
                         foodValue += 25;
                         trash.trashCanSingle();
+                        lastFoodInserted = 25;
+                        dataHandling.RecipeCheckHandling();
                     }
                     else
                     {
@@ -62,6 +67,8 @@ public class DeliverySystem : MonoBehaviour
                         Debug.Log("Beef inserted in bag");
                         foodValue += 10;
                         trash.trashCanSingle();
+                        lastFoodInserted = 10;
+                        dataHandling.RecipeCheckHandling();
                     }
                     else
                     {
@@ -76,6 +83,8 @@ public class DeliverySystem : MonoBehaviour
                         Debug.Log("Tomato inserted in bag");
                         foodValue += 20;
                         trash.trashCanSingle();
+                        lastFoodInserted = 20;
+                        dataHandling.RecipeCheckHandling();
                     }
                     else
                     {

@@ -8,10 +8,10 @@ public class OrderSystem : MonoBehaviour
 {
     [SerializeField]
     public bool isRecipeActive;
-    public Image RecipeImage;
-    public DeliverySystem bagInventory;
+    public DeliverySystem deliverySystem;
     public DeathTimer deathTimer;
     public ScoreSystem scoreSystem;
+    public DataHandling dataHandling;
 
     public int recipeValue;
     public int recipeID;
@@ -42,39 +42,24 @@ public class OrderSystem : MonoBehaviour
         }
         else
         {
-            switch (recipeID)
-            {
-                case 0:
-                    if (true)
-                    {
-
-                    }
-                    break;
-                case 1:
-                    break;
-                case 2:
-                    break;
-                case 3:
-                    break;
-                default:
-                    break;
-            }
-            if (bagInventory.foodValue == recipeValue)
+            if (deliverySystem.foodValue == recipeValue)
             {
                 Debug.Log("food made");
                 //foodText.SetActive(true);
 
                 foodMadePopUp();
                 isRecipeActive = false;
-                bagInventory.saladPresent = false;
-                bagInventory.bunPresent = false;
-                bagInventory.beefPresent = false;
-                bagInventory.tomatoPresent = false;
-                bagInventory.foodValue = 0;
+                deliverySystem.saladPresent = false;
+                deliverySystem.bunPresent = false;
+                deliverySystem.beefPresent = false;
+                deliverySystem.tomatoPresent = false;
+                deliverySystem.foodValue = 0;
                 deathTimer.time = 15;
                 scoreSystem.ScoreIncrease();
+                dataHandling.RecipeChecklistColorCorrect();
             }
         }
+        dataHandling.RecipeChecklistImageHandling();
     }
 
     public void recipeActivityClick()

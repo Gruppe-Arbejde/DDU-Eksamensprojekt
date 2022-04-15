@@ -7,11 +7,15 @@ using UnityEngine.UI;
 public class IngredientInteraction : MonoBehaviour
 {
     //Variable creation
-    public GameObject boxUI;
+    public GameObject ingredientInventory;
     public GameObject popup;
     public GameObject maxInventoryPopUp;
     public MaxInventoryManager inventory;
     public IngredientInteraction interaction;
+    public Sprite bun;
+    public Sprite salad;
+    public Sprite beef;
+    public Sprite tomato;
 
     public bool maxInventoryActive;
     bool pickUpAllowed;
@@ -70,7 +74,8 @@ public class IngredientInteraction : MonoBehaviour
         if (inventory.maxInventoryActive == false) //checks if the player already holds an ingredient
         {
             Debug.Log("you acquired salad"); //debug
-            boxUI.transform.GetChild(0).gameObject.SetActive(true); //sets first child object[0] of Box to active
+            ingredientInventory.GetComponent<Image>().sprite = salad;
+            ingredientInventory.GetComponent<Image>().color = Color.white;
             inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
             interaction.foodID = 15;
         }
@@ -86,7 +91,8 @@ public class IngredientInteraction : MonoBehaviour
         if (inventory.maxInventoryActive == false)
         {
             Debug.Log("you acquired buns"); //debug
-            boxUI.transform.GetChild(1).gameObject.SetActive(true); //sets first child object[1] of Box to active
+            ingredientInventory.GetComponent<Image>().sprite = bun;
+            ingredientInventory.GetComponent<Image>().color = Color.white;
             inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
             interaction.foodID = 25;
         }
@@ -102,7 +108,8 @@ public class IngredientInteraction : MonoBehaviour
         if (inventory.maxInventoryActive == false)
         {
             Debug.Log("you acquired beef"); //debug
-            boxUI.transform.GetChild(2).gameObject.SetActive(true); //sets first child object[2] of Box to active
+            ingredientInventory.GetComponent<Image>().sprite = beef;
+            ingredientInventory.GetComponent<Image>().color = Color.white;
             inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
             interaction.foodID = 10;
         }
@@ -119,7 +126,8 @@ public class IngredientInteraction : MonoBehaviour
         if (inventory.maxInventoryActive == false) //checks if the player already holds an ingredient
         {
             Debug.Log("you acquired tomato"); //debug
-            boxUI.transform.GetChild(3).gameObject.SetActive(true); //sets first child object[0] of Box to active
+            ingredientInventory.GetComponent<Image>().sprite = tomato;
+            ingredientInventory.GetComponent<Image>().color = Color.white;
             inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
             interaction.foodID = 20;
         }
