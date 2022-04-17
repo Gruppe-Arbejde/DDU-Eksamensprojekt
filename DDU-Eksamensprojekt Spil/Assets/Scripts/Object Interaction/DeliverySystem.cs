@@ -11,6 +11,7 @@ public class DeliverySystem : MonoBehaviour
     public IngredientInteraction interaction;
     public DataHandling dataHandling;
     public TrashCanScript trash;
+    public AudioManager audioManager;
 
     public int foodValue;
     public int lastFoodInserted;
@@ -94,6 +95,7 @@ public class DeliverySystem : MonoBehaviour
                 default:
                     break;
             }
+            audioManager.Play("player pickup");
         }
         if (Input.GetKeyDown(KeyCode.E) && pickUpAllowed)
         {

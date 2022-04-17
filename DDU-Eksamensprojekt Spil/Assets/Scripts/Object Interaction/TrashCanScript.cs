@@ -7,7 +7,7 @@ public class TrashCanScript : MonoBehaviour
 {
     bool pickUpAllowed;
     public GameObject ingredientImage;
-
+    public AudioManager audioManager; 
     public GameObject popup;
     public IngredientInteraction interaction;
     public MaxInventoryManager maxInventoryManager;
@@ -20,6 +20,7 @@ public class TrashCanScript : MonoBehaviour
             ingredientImage.GetComponent<Image>().sprite = null;
             maxInventoryManager.maxInventoryActive = false;
             ingredientImage.GetComponent<Image>().color = noColor;
+            audioManager.Play("player pickup");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

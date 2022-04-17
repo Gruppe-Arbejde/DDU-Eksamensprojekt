@@ -8,6 +8,7 @@ public class KitchenSinkScript : MonoBehaviour
     bool pickUpAllowed;
     public GameObject popup;
     public GameObject insanityLight;
+    public AudioManager audioManager; //
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class KitchenSinkScript : MonoBehaviour
         {
             insanityLight.GetComponent<Light2D>().pointLightOuterRadius = 2;
             //insanityLight.pointLightOuterRadius = 2;
+            audioManager.Play("player pickup");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision) //function that triggers when two colliders are touching

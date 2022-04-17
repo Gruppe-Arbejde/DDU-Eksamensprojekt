@@ -10,9 +10,14 @@ public class IngredientInteraction : MonoBehaviour
     public GameObject ingredientInventory;
     public GameObject popup;
     public GameObject maxInventoryPopUp;
+
+    public AudioManager audioManager;
     public MaxInventoryManager inventory;
     public IngredientInteraction interaction;
     public TrashCanScript trash;
+
+    public Animator anim;
+    public AudioSource audioSource;
 
     //sprites
     public Sprite bun;
@@ -22,11 +27,6 @@ public class IngredientInteraction : MonoBehaviour
     public Sprite choppedSalad;
     public Sprite choppedTomato;
     public Sprite choppedBeef;
-
-    //process interaction
-    public Animation tomatoCutting;
-    public Animation saladCutting;
-    public Animation beefCutting;
 
     //Bools
     public bool maxInventoryActive;
@@ -39,6 +39,11 @@ public class IngredientInteraction : MonoBehaviour
 
     public int generatorID;
     public int foodID;
+    void Start()
+    {
+        anim = gameObject.GetComponent<Animator>();
+    }
+
 
     void Update()
     {
@@ -67,6 +72,7 @@ public class IngredientInteraction : MonoBehaviour
                 default:
                     break;
             }
+            audioManager.Play("player pickup");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision) //function that triggers when two colliders are touching
@@ -195,15 +201,21 @@ public class IngredientInteraction : MonoBehaviour
                     Debug.Log("you begin to cut salad"); //debug
                     trash.trashCanSingle();
                     cuttingBoardFull = true;
+                    audioSource.Play();
+                    anim.Play("SaladChopping");
                     Invoke("ProcessSalad", 3);
                 }
                 else if (saladCut == true && inventory.maxInventoryActive == false)
                 {
+                    anim.enabled = true; //stupid code that needs to be here for animation to work properly
+                    anim.Play("cuttingBoard_Idle");
                     cuttingBoardFull = false;
                     saladCut = false;
                     Debug.Log("Acquired chopped salad");
+
                     ingredientInventory.GetComponent<Image>().sprite = choppedSalad;
                     ingredientInventory.GetComponent<Image>().color = Color.white;
+
                     inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
                     interaction.foodID = 30;
                 }
@@ -211,13 +223,20 @@ public class IngredientInteraction : MonoBehaviour
             case 20:
                 if (tomatoCut == false && cuttingBoardFull == false)
                 {
+                    anim.Play("cuttingBoard_Idle");
+                    audioSource.Play();
                     Debug.Log("you begin to cut tomatoes"); //debug
                     trash.trashCanSingle();
                     cuttingBoardFull = true;
+                    audioManager.Play("cutting salad");
+                    anim.Play("TomatoChopping");
                     Invoke("ProcessTomato", 3);
                 }
                 else if (tomatoCut == true && inventory.maxInventoryActive == false)
                 {
+                    anim.enabled = true; //stupid code that needs to be here for animation to work properly
+                    anim.Play("cuttingBoard_Idle");
+
                     cuttingBoardFull = false;
                     tomatoCut = false;
                     Debug.Log("Acquired chopped tomato");
@@ -257,15 +276,21 @@ public class IngredientInteraction : MonoBehaviour
     {
         beefCut = true;
         Debug.Log("Beef cooked");
+        anim.enabled = false;
+        audioSource.Stop();
     }
     public void ProcessSalad()
     {
         saladCut = true;
         Debug.Log("salad chopped");
+        anim.enabled = false;
+        audioSource.Stop();
     }
     public void ProcessTomato()
     {
         tomatoCut = true;
         Debug.Log("tomato chopped");
+        anim.enabled = false;
+        audioSource.Stop();
     }
 }
