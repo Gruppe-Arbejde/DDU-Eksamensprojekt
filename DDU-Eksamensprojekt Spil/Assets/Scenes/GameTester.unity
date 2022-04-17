@@ -1491,7 +1491,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dc8af8cdd81d0d548ae1f20353f00518, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 608e8d4fc8a4e0743b275d41151b77f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2336,11 +2336,23 @@ MonoBehaviour:
   maxInventoryPopUp: {fileID: 1483896328}
   inventory: {fileID: 737740185}
   interaction: {fileID: 366855749}
+  trash: {fileID: 0}
   bun: {fileID: 21300000, guid: 23abc91142736134690b3a56866a4a36, type: 3}
   salad: {fileID: 21300000, guid: dc8af8cdd81d0d548ae1f20353f00518, type: 3}
   beef: {fileID: 21300000, guid: f4ee27b299c07d744bed2571f03e4af2, type: 3}
   tomato: {fileID: 21300000, guid: ab7c2a668055c354eba919cc3837b48a, type: 3}
+  choppedSalad: {fileID: 21300000, guid: 608e8d4fc8a4e0743b275d41151b77f3, type: 3}
+  choppedTomato: {fileID: 21300000, guid: 74a7276b1f7ce554eb62058e764a45c4, type: 3}
+  choppedBeef: {fileID: 21300000, guid: 00245169983596146a776de2ceff0c02, type: 3}
+  tomatoCutting: {fileID: 0}
+  saladCutting: {fileID: 0}
+  beefCutting: {fileID: 0}
   maxInventoryActive: 0
+  beefCut: 0
+  tomatoCut: 0
+  saladCut: 0
+  cuttingBoardFull: 0
+  cookerFull: 0
   generatorID: 0
   foodID: 0
 --- !u!1 &372479817
@@ -2740,11 +2752,23 @@ MonoBehaviour:
   maxInventoryPopUp: {fileID: 1483896328}
   inventory: {fileID: 737740185}
   interaction: {fileID: 366855749}
+  trash: {fileID: 0}
   bun: {fileID: 21300000, guid: 23abc91142736134690b3a56866a4a36, type: 3}
   salad: {fileID: 21300000, guid: dc8af8cdd81d0d548ae1f20353f00518, type: 3}
   beef: {fileID: 21300000, guid: f4ee27b299c07d744bed2571f03e4af2, type: 3}
   tomato: {fileID: 21300000, guid: ab7c2a668055c354eba919cc3837b48a, type: 3}
+  choppedSalad: {fileID: 21300000, guid: 608e8d4fc8a4e0743b275d41151b77f3, type: 3}
+  choppedTomato: {fileID: 21300000, guid: 74a7276b1f7ce554eb62058e764a45c4, type: 3}
+  choppedBeef: {fileID: 0}
+  tomatoCutting: {fileID: 0}
+  saladCutting: {fileID: 0}
+  beefCutting: {fileID: 0}
   maxInventoryActive: 0
+  beefCut: 0
+  tomatoCut: 0
+  saladCut: 0
+  cuttingBoardFull: 0
+  cookerFull: 0
   generatorID: 1
   foodID: 0
 --- !u!61 &425947412
@@ -3765,7 +3789,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.2, y: 2.8}
+    oldSize: {x: 1.6, y: 2.2}
     newSize: {x: 1.6, y: 2.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4429,11 +4453,23 @@ MonoBehaviour:
   maxInventoryPopUp: {fileID: 1483896328}
   inventory: {fileID: 737740185}
   interaction: {fileID: 366855749}
+  trash: {fileID: 0}
   bun: {fileID: 21300000, guid: 23abc91142736134690b3a56866a4a36, type: 3}
   salad: {fileID: 21300000, guid: dc8af8cdd81d0d548ae1f20353f00518, type: 3}
   beef: {fileID: 21300000, guid: f4ee27b299c07d744bed2571f03e4af2, type: 3}
   tomato: {fileID: 21300000, guid: ab7c2a668055c354eba919cc3837b48a, type: 3}
+  choppedSalad: {fileID: 0}
+  choppedTomato: {fileID: 0}
+  choppedBeef: {fileID: 0}
+  tomatoCutting: {fileID: 0}
+  saladCutting: {fileID: 0}
+  beefCutting: {fileID: 0}
   maxInventoryActive: 0
+  beefCut: 0
+  tomatoCut: 0
+  saladCut: 0
+  cuttingBoardFull: 0
+  cookerFull: 0
   generatorID: 3
   foodID: 0
 --- !u!50 &666765987
@@ -5002,7 +5038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &803492460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6448,11 +6484,23 @@ MonoBehaviour:
   maxInventoryPopUp: {fileID: 1483896328}
   inventory: {fileID: 737740185}
   interaction: {fileID: 366855749}
+  trash: {fileID: 1585045641}
   bun: {fileID: 21300000, guid: 23abc91142736134690b3a56866a4a36, type: 3}
   salad: {fileID: 21300000, guid: dc8af8cdd81d0d548ae1f20353f00518, type: 3}
   beef: {fileID: 21300000, guid: f4ee27b299c07d744bed2571f03e4af2, type: 3}
   tomato: {fileID: 21300000, guid: ab7c2a668055c354eba919cc3837b48a, type: 3}
+  choppedSalad: {fileID: 0}
+  choppedTomato: {fileID: 0}
+  choppedBeef: {fileID: 21300000, guid: 00245169983596146a776de2ceff0c02, type: 3}
+  tomatoCutting: {fileID: 0}
+  saladCutting: {fileID: 0}
+  beefCutting: {fileID: 0}
   maxInventoryActive: 0
+  beefCut: 0
+  tomatoCut: 0
+  saladCut: 0
+  cuttingBoardFull: 0
+  cookerFull: 0
   generatorID: 5
   foodID: 0
 --- !u!61 &1235548715
@@ -7223,7 +7271,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ab7c2a668055c354eba919cc3837b48a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74a7276b1f7ce554eb62058e764a45c4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7884,7 +7932,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f4ee27b299c07d744bed2571f03e4af2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00245169983596146a776de2ceff0c02, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8494,11 +8542,23 @@ MonoBehaviour:
   maxInventoryPopUp: {fileID: 1483896328}
   inventory: {fileID: 737740185}
   interaction: {fileID: 366855749}
+  trash: {fileID: 0}
   bun: {fileID: 21300000, guid: 23abc91142736134690b3a56866a4a36, type: 3}
   salad: {fileID: 21300000, guid: dc8af8cdd81d0d548ae1f20353f00518, type: 3}
   beef: {fileID: 21300000, guid: f4ee27b299c07d744bed2571f03e4af2, type: 3}
   tomato: {fileID: 21300000, guid: ab7c2a668055c354eba919cc3837b48a, type: 3}
+  choppedSalad: {fileID: 0}
+  choppedTomato: {fileID: 0}
+  choppedBeef: {fileID: 0}
+  tomatoCutting: {fileID: 0}
+  saladCutting: {fileID: 0}
+  beefCutting: {fileID: 0}
   maxInventoryActive: 0
+  beefCut: 0
+  tomatoCut: 0
+  saladCut: 0
+  cuttingBoardFull: 0
+  cookerFull: 0
   generatorID: 4
   foodID: 0
 --- !u!61 &1614814064
@@ -9678,11 +9738,23 @@ MonoBehaviour:
   maxInventoryPopUp: {fileID: 1483896328}
   inventory: {fileID: 737740185}
   interaction: {fileID: 366855749}
+  trash: {fileID: 1585045641}
   bun: {fileID: 21300000, guid: 23abc91142736134690b3a56866a4a36, type: 3}
   salad: {fileID: 21300000, guid: dc8af8cdd81d0d548ae1f20353f00518, type: 3}
   beef: {fileID: 21300000, guid: f4ee27b299c07d744bed2571f03e4af2, type: 3}
   tomato: {fileID: 21300000, guid: ab7c2a668055c354eba919cc3837b48a, type: 3}
+  choppedSalad: {fileID: 21300000, guid: 608e8d4fc8a4e0743b275d41151b77f3, type: 3}
+  choppedTomato: {fileID: 21300000, guid: 74a7276b1f7ce554eb62058e764a45c4, type: 3}
+  choppedBeef: {fileID: 0}
+  tomatoCutting: {fileID: 0}
+  saladCutting: {fileID: 0}
+  beefCutting: {fileID: 0}
   maxInventoryActive: 0
+  beefCut: 0
+  tomatoCut: 0
+  saladCut: 0
+  cuttingBoardFull: 0
+  cookerFull: 0
   generatorID: 6
   foodID: 0
 --- !u!61 &1822162991
@@ -10988,11 +11060,23 @@ MonoBehaviour:
   maxInventoryPopUp: {fileID: 1483896328}
   inventory: {fileID: 737740185}
   interaction: {fileID: 366855749}
+  trash: {fileID: 0}
   bun: {fileID: 21300000, guid: 23abc91142736134690b3a56866a4a36, type: 3}
   salad: {fileID: 21300000, guid: dc8af8cdd81d0d548ae1f20353f00518, type: 3}
   beef: {fileID: 21300000, guid: f4ee27b299c07d744bed2571f03e4af2, type: 3}
   tomato: {fileID: 21300000, guid: ab7c2a668055c354eba919cc3837b48a, type: 3}
+  choppedSalad: {fileID: 0}
+  choppedTomato: {fileID: 0}
+  choppedBeef: {fileID: 0}
+  tomatoCutting: {fileID: 0}
+  saladCutting: {fileID: 0}
+  beefCutting: {fileID: 0}
   maxInventoryActive: 0
+  beefCut: 0
+  tomatoCut: 0
+  saladCut: 0
+  cuttingBoardFull: 0
+  cookerFull: 0
   generatorID: 2
   foodID: 0
 --- !u!61 &1973112018
@@ -11086,7 +11170,7 @@ GameObject:
   - component: {fileID: 2020312193}
   - component: {fileID: 2020312192}
   m_Layer: 5
-  m_Name: Ingredients
+  m_Name: Inventory Ingredients
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

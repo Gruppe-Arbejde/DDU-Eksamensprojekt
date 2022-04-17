@@ -36,7 +36,7 @@ public class OrderSystem : MonoBehaviour
         //change this back after system completion
         if (isRecipeActive == false) //checks if there is a recipe already displayed
         {
-            recipe(Random.Range(0, 4)); //generates a random number so that the recipes chosen are random
+            recipe(Random.Range(0, 7)); //generates a random number so that the recipes chosen are random
             Debug.Log("random generated"); //development help
             isRecipeActive = true;
         }
@@ -82,32 +82,40 @@ public class OrderSystem : MonoBehaviour
         switch (recipeName) //multi selection of recipes depending of random value generated
         {
             case 0: //burger (salad, bun, beef)
-                //RecipeImage.color = Color.red;
-                recipeValue = 50;
-                ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Salad\nBun\nBeef";
+                recipeValue = 95;
                 FoodPicture.GetComponent<Image>().sprite = hamBurger;
                 recipeID = 0;
                 break;
             case 1: //single salad
-                //RecipeImage.color = Color.green;
-                recipeValue = 15;
-                ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Salad";
+                recipeValue = 30;
                 FoodPicture.GetComponent<Image>().sprite = salad;
                 recipeID = 1;
                 break;
             case 2: //single beef
-                //RecipeImage.color = Color.blue;
-                recipeValue = 10;
-                ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Beef";
+                recipeValue = 40;
                 FoodPicture.GetComponent<Image>().sprite = beef;
                 recipeID = 2;
                 break;
             case 3: //Tomato
-                //RecipeImage.color = Color.blue;
-                recipeValue = 20;
-                ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Tomato";
+                recipeValue = 35;
                 FoodPicture.GetComponent<Image>().sprite = tomato;
                 recipeID = 3;
+                break;
+            case 4: //Tomato, salad, bun, beef
+                recipeValue = 130;
+                FoodPicture.GetComponent<Image>().sprite = hamBurger;
+                recipeID = 4;
+                break;
+            case 5: //Tomato, salad, bun
+                recipeValue = 90;
+                FoodPicture.GetComponent<Image>().sprite = hamBurger;
+                recipeID = 5;
+                break;
+            case 6: //Beef, bun tomato
+                recipeValue = 85;
+                //ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Tomato";
+                FoodPicture.GetComponent<Image>().sprite = hamBurger;
+                recipeID = 6;
                 break;
             default:
                 break;
