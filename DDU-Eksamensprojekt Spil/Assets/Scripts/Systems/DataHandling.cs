@@ -54,21 +54,40 @@ public class DataHandling : MonoBehaviour
                 beef.SetActive(false);
                 tomato.SetActive(true);
                 break;
+            case 4:
+                salad.SetActive(true);
+                bun.SetActive(true);
+                beef.SetActive(true);
+                tomato.SetActive(true);
+                break;
+            case 5:
+                salad.SetActive(true);
+                bun.SetActive(true);
+                beef.SetActive(false);
+                tomato.SetActive(true);
+                break;
+            case 6:
+                salad.SetActive(false);
+                bun.SetActive(true);
+                beef.SetActive(true);
+                tomato.SetActive(true);
+                break;
             default:
                 break;
+
         }
     }
     public void RecipeCheckHandling()
     {
         switch (deliverySystem.lastFoodInserted)
         {
-            case 10: //beef
+            case 40: //beef
                 beefImage.GetComponent<Image>().color = Color.white;
                 break;
-            case 15: //salad
+            case 30: //salad
                 saladImage.GetComponent<Image>().color = Color.white;
                 break;
-            case 20: //tomato
+            case 35: //tomato
                 tomatoImage.GetComponent<Image>().color = Color.white;
                 break;
             case 25: //bun

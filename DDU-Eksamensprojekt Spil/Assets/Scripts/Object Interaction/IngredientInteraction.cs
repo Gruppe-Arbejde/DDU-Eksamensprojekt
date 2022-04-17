@@ -12,12 +12,29 @@ public class IngredientInteraction : MonoBehaviour
     public GameObject maxInventoryPopUp;
     public MaxInventoryManager inventory;
     public IngredientInteraction interaction;
+    public TrashCanScript trash;
+
+    //sprites
     public Sprite bun;
     public Sprite salad;
     public Sprite beef;
     public Sprite tomato;
+    public Sprite choppedSalad;
+    public Sprite choppedTomato;
+    public Sprite choppedBeef;
 
+    //process interaction
+    public Animation tomatoCutting;
+    public Animation saladCutting;
+    public Animation beefCutting;
+
+    //Bools
     public bool maxInventoryActive;
+    public bool beefCut;
+    public bool tomatoCut;
+    public bool saladCut;
+    public bool cuttingBoardFull;
+    public bool cookerFull;
     bool pickUpAllowed;
 
     public int generatorID;
@@ -35,7 +52,7 @@ public class IngredientInteraction : MonoBehaviour
                 case 2:
                     BunShelfClick(); //runs BunShelfClick function
                     break;
-                case 3: 
+                case 3:
                     BeefShelfClick(); //runs BeefShelfClick function
                     break;
                 case 4:
@@ -147,17 +164,81 @@ public class IngredientInteraction : MonoBehaviour
 
     public void CookerClick()
     {
-        Debug.Log("cooker clicked"); //debug
-
-        //type code here
+        if (beefCut == false && cookerFull == false && interaction.foodID == 10)
+        {
+            Debug.Log("you begin to cook beef"); //debug
+            trash.trashCanSingle();
+            cookerFull = true;
+            Invoke("ProcessBeef", 3);
+        }
+        else if (beefCut == true && inventory.maxInventoryActive == false)
+        {
+            cookerFull = false;
+            beefCut = false;
+            Debug.Log("Acquired cooked beef");
+            ingredientInventory.GetComponent<Image>().sprite = choppedBeef;
+            ingredientInventory.GetComponent<Image>().color = Color.white;
+            inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
+            interaction.foodID = 40;
+        }
 
     }
 
     public void CuttingBoardClick()
     {
-        Debug.Log("cuttingboard clicked"); //debug
-
-        //type code here
+        Debug.Log("shelf clicked"); //debug
+        switch (interaction.foodID)
+        {
+            case 15:
+                if (saladCut == false && cuttingBoardFull == false)
+                {
+                    Debug.Log("you begin to cut salad"); //debug
+                    trash.trashCanSingle();
+                    cuttingBoardFull = true;
+                    Invoke("ProcessSalad", 3);
+                }
+                else if (saladCut == true && inventory.maxInventoryActive == false)
+                {
+                    cuttingBoardFull = false;
+                    saladCut = false;
+                    Debug.Log("Acquired chopped salad");
+                    ingredientInventory.GetComponent<Image>().sprite = choppedSalad;
+                    ingredientInventory.GetComponent<Image>().color = Color.white;
+                    inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
+                    interaction.foodID = 30;
+                }
+                break;
+            case 20:
+                if (tomatoCut == false && cuttingBoardFull == false)
+                {
+                    Debug.Log("you begin to cut tomatoes"); //debug
+                    trash.trashCanSingle();
+                    cuttingBoardFull = true;
+                    Invoke("ProcessTomato", 3);
+                }
+                else if (tomatoCut == true && inventory.maxInventoryActive == false)
+                {
+                    cuttingBoardFull = false;
+                    tomatoCut = false;
+                    Debug.Log("Acquired chopped tomato");
+                    ingredientInventory.GetComponent<Image>().sprite = choppedTomato;
+                    ingredientInventory.GetComponent<Image>().color = Color.white;
+                    inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
+                    interaction.foodID = 35;
+                }
+                break;
+            default:
+                break;
+        }
+        //if (interaction.foodID == 10)
+        //{
+        //    Debug.Log("you begin cut vegetables"); //debug
+        //}
+        //else
+        //{
+        //    Debug.Log("inventory is full"); //debug
+        //    maxInvPopUp(); //runs the maxInvPopUp function
+        //}
     }
 
     public void maxInvPopUp() //ingredient creation
@@ -171,5 +252,20 @@ public class IngredientInteraction : MonoBehaviour
         {
             maxInventoryPopUp.SetActive(false); //sets the popup to being false and therefore not displayed
         }
+    }
+    public void ProcessBeef()
+    {
+        beefCut = true;
+        Debug.Log("Beef cooked");
+    }
+    public void ProcessSalad()
+    {
+        saladCut = true;
+        Debug.Log("salad chopped");
+    }
+    public void ProcessTomato()
+    {
+        tomatoCut = true;
+        Debug.Log("tomato chopped");
     }
 }

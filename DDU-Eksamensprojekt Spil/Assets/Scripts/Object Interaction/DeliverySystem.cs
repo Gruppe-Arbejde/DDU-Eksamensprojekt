@@ -27,15 +27,15 @@ public class DeliverySystem : MonoBehaviour
         {
             switch (interaction.foodID)
             {
-                case 15: //salad
+                case 30: //salad
                     if (saladPresent == false)
                     {
                         saladPresent = true;
                         inventory.maxInventoryActive = false;
-                        foodValue += 15;
+                        foodValue += 30;
                         Debug.Log("Salad inserted in bag");
                         trash.trashCanSingle();
-                        lastFoodInserted = 15;
+                        lastFoodInserted = 30;
                         dataHandling.RecipeCheckHandling();
                     }
                     else
@@ -59,15 +59,15 @@ public class DeliverySystem : MonoBehaviour
                         Debug.Log("Salad already present");
                     }
                     break;
-                case 10: //beef
+                case 40: //beef
                     if (beefPresent == false)
                     {
                         beefPresent = true;
                         inventory.maxInventoryActive = false;
                         Debug.Log("Beef inserted in bag");
-                        foodValue += 10;
+                        foodValue += 40;
                         trash.trashCanSingle();
-                        lastFoodInserted = 10;
+                        lastFoodInserted = 40;
                         dataHandling.RecipeCheckHandling();
                     }
                     else
@@ -75,13 +75,13 @@ public class DeliverySystem : MonoBehaviour
                         Debug.Log("Salad already present");
                     }
                     break;
-                case 20: //tomato
+                case 35: //tomato
                     if (tomatoPresent == false)
                     {
                         tomatoPresent = true;
                         inventory.maxInventoryActive = false;
                         Debug.Log("Tomato inserted in bag");
-                        foodValue += 20;
+                        foodValue += 35;
                         trash.trashCanSingle();
                         lastFoodInserted = 20;
                         dataHandling.RecipeCheckHandling();
