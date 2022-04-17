@@ -206,10 +206,42 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Vertical
     m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 9f45043d5749e9a45adf04b8b64eb44d, type: 2}
+    m_Threshold: 7
+    m_Position: {x: -1, y: -1}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Vertical
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 9f45043d5749e9a45adf04b8b64eb44d, type: 2}
+    m_Threshold: 9
+    m_Position: {x: -1, y: 1}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Vertical
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 26dda30bfd6e97b4daf917611b0b1e5e, type: 2}
+    m_Threshold: 11
+    m_Position: {x: 1, y: 1}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Vertical
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 26dda30bfd6e97b4daf917611b0b1e5e, type: 2}
+    m_Threshold: 13
+    m_Position: {x: 1, y: -1}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Vertical
+    m_Mirror: 0
   m_BlendParameter: Horizontal
   m_BlendParameterY: Vertical
   m_MinThreshold: -1
-  m_MaxThreshold: 5
+  m_MaxThreshold: 13
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 1
