@@ -8,7 +8,6 @@ public class InsanityScript : MonoBehaviour
 {
     //variable creation
     Light2D insanityLight;
-    private double outerRadius;
     public Teleport teleport;
     public GameObject insanityScript;
 
@@ -20,7 +19,7 @@ public class InsanityScript : MonoBehaviour
     public void insanityStart()
     {
         insanityLight = GetComponent<Light2D>(); //gets light component from gameObject
-        outerRadius = insanityLight.pointLightOuterRadius; //sets outerRadious variable to the light objects current outer radius
+        //outerRadius = insanityLight.pointLightOuterRadius; //sets outerRadious variable to the light objects current outer radius
         Invoke("moreInsane", 1); //invoke the specified function after a second
     }
 

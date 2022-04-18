@@ -23,7 +23,7 @@ public class MenuManager : MonoBehaviour
         HowToMenu.SetActive(false);
         LevelMenu.SetActive(true);
         Debug.Log("Levels");
-        //SceneManager.LoadScene(1); //loads game when pressed
+        SceneManager.LoadScene(1); //loads game when pressed
         Debug.Log("Play");
     }
 
@@ -60,7 +60,7 @@ public class MenuManager : MonoBehaviour
     public void SetVolume(float volume)
     {
         MasterVolume.SetFloat("MasterVolume", volume);
-        //Debug.Log(volume);
+        Debug.Log(volume);
     }
 
     public void LevelOneButtonPress()

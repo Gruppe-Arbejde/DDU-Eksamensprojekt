@@ -7403,9 +7403,9 @@ MonoBehaviour:
   recipeValue: 0
   recipeID: 0
   hamBurger: {fileID: 21300000, guid: 4c7f42919defe4a47bd0c8632e9c2763, type: 3}
-  salad: {fileID: 21300000, guid: dc8af8cdd81d0d548ae1f20353f00518, type: 3}
-  beef: {fileID: 21300000, guid: f4ee27b299c07d744bed2571f03e4af2, type: 3}
-  tomato: {fileID: 21300000, guid: ab7c2a668055c354eba919cc3837b48a, type: 3}
+  salad: {fileID: 21300000, guid: 608e8d4fc8a4e0743b275d41151b77f3, type: 3}
+  beef: {fileID: 21300000, guid: 00245169983596146a776de2ceff0c02, type: 3}
+  tomato: {fileID: 21300000, guid: 74a7276b1f7ce554eb62058e764a45c4, type: 3}
   ingredientList: {fileID: 1571786927}
   FoodPicture: {fileID: 648341522}
 --- !u!222 &1358413949

@@ -11,7 +11,7 @@ public class DeathTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        time = 25; //start value of countdown
+        time = 35; //start value of countdown
         Invoke("Timer", 1);
     }
 

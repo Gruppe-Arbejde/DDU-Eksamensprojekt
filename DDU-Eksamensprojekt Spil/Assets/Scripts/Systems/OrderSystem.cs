@@ -21,8 +21,8 @@ public class OrderSystem : MonoBehaviour
     public Sprite salad;
     public Sprite beef;
     public Sprite tomato;
-
-    public GameObject ingredientList;
+    
+    //public GameObject ingredientList;
     public GameObject FoodPicture;
 
     private void Start()
@@ -69,18 +69,18 @@ public class OrderSystem : MonoBehaviour
         dataHandling.RecipeChecklistImageHandling();
     }
 
-    public void recipeActivityClick()
-    {
-        if (isRecipeActive == true)
-        {
-            isRecipeActive = false;
-        }
-        else
-        {
-            isRecipeActive = true;
-        }
+    //public void recipeActivityClick()
+    //{
+    //    if (isRecipeActive == true)
+    //    {
+    //        isRecipeActive = false;
+    //    }
+    //    else
+    //    {
+    //        isRecipeActive = true;
+    //    }
 
-    }
+    //}
 
     public void recipe(int recipeName) //function that recieves a float called recipeName
     {
