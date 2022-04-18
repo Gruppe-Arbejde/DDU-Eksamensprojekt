@@ -177,11 +177,11 @@ public class IngredientInteraction : MonoBehaviour
             cookerFull = true;
             audioSource.Play();
             anim.Play("beefCooking");
-            Invoke("ProcessBeef", 3);
+            Invoke("ProcessBeef", 5);
         }
         else if (beefCut == true && inventory.maxInventoryActive == false)
         {
-            anim.enabled = true; //stupid code that needs to be here for animation to work properly
+            //anim.enabled = true; //stupid code that needs to be here for animation to work properly
             anim.Play("beefIdle");
             cookerFull = false;
             beefCut = false;
@@ -210,7 +210,7 @@ public class IngredientInteraction : MonoBehaviour
 
                     trash.trashCanSingle();
                     anim.Play("SaladChopping");
-                    Invoke("ProcessSalad", 3);
+                    Invoke("ProcessSalad", 5);
                 }
                 break;
             case 20:
@@ -223,7 +223,7 @@ public class IngredientInteraction : MonoBehaviour
                     trash.trashCanSingle();
                     cuttingBoardFull = true;
                     anim.Play("TomatoChopping");
-                    Invoke("ProcessTomato", 3);
+                    Invoke("ProcessTomato", 5);
                 }
                 break;
             default:
@@ -232,8 +232,9 @@ public class IngredientInteraction : MonoBehaviour
         //outside of loop so that it can be accesed from all types of interaction ids
         if (saladCut == true && inventory.maxInventoryActive == false)
         {
-            anim.enabled = true; //stupid code that needs to be here for animation to work properly
+            //anim.enabled = true; //stupid code that needs to be here for animation to work properly
             anim.Play("cuttingBoard_Idle");
+
             cuttingBoardFull = false;
             saladCut = false;
             Debug.Log("Acquired chopped salad");
@@ -246,7 +247,7 @@ public class IngredientInteraction : MonoBehaviour
         }
         else if (tomatoCut == true && inventory.maxInventoryActive == false)
         {
-            anim.enabled = true; //stupid code that needs to be here for animation to work properly
+            //anim.enabled = true; //stupid code that needs to be here for animation to work properly
             anim.Play("cuttingBoard_Idle");
 
             cuttingBoardFull = false;
@@ -277,21 +278,21 @@ public class IngredientInteraction : MonoBehaviour
     {
         beefCut = true;
         Debug.Log("Beef cooked");
-        anim.enabled = false;
         audioSource.Stop();
+        anim.Play("beefCookingDone");
     }
     public void ProcessSalad()
     {
         saladCut = true;
         Debug.Log("salad chopped");
-        anim.enabled = false;
         audioSource.Stop();
+        anim.Play("cuttingBoardSaladDone");
     }
     public void ProcessTomato()
     {
         tomatoCut = true;
         Debug.Log("tomato chopped");
-        anim.enabled = false;
         audioSource.Stop();
+        anim.Play("cuttingBoardTomatoDone");
     }
 }

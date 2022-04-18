@@ -12,6 +12,7 @@ public class OrderSystem : MonoBehaviour
     public DeathTimer deathTimer;
     public ScoreSystem scoreSystem;
     public DataHandling dataHandling;
+    public AudioManager audioManager;
 
     public int recipeValue;
     public int recipeID;
@@ -21,9 +22,7 @@ public class OrderSystem : MonoBehaviour
     public Sprite beef;
     public Sprite tomato;
 
-    public GameObject foodText;
     public GameObject ingredientList;
-    //public GameObject recipePicture;
     public GameObject FoodPicture;
 
     private void Start()
@@ -45,9 +44,8 @@ public class OrderSystem : MonoBehaviour
             if (deliverySystem.foodValue == recipeValue)
             {
                 Debug.Log("food made");
-                //foodText.SetActive(true);
-
-                foodMadePopUp();
+                //foodMadePopUp();
+                audioManager.Play("clock");
                 isRecipeActive = false;
                 deliverySystem.saladPresent = false;
                 deliverySystem.bunPresent = false;
@@ -58,10 +56,15 @@ public class OrderSystem : MonoBehaviour
                 scoreSystem.ScoreIncrease();
                 dataHandling.RecipeChecklistColorCorrect();
             }
-            //else if (deliverySystem.foodValue > recipeValue)
-            //{
-
-            //}
+            else if (deliverySystem.foodValue > recipeValue)
+            {
+                deliverySystem.saladPresent = false;
+                deliverySystem.bunPresent = false;
+                deliverySystem.beefPresent = false;
+                deliverySystem.tomatoPresent = false;
+                deliverySystem.foodValue = 0;
+                dataHandling.RecipeChecklistColorCorrect();
+            }
         }
         dataHandling.RecipeChecklistImageHandling();
     }
@@ -116,7 +119,7 @@ public class OrderSystem : MonoBehaviour
                 recipeID = 5;
                 break;
             case 6: //Beef, bun tomato
-                recipeValue = 85;
+                recipeValue = 100;
                 //ingredientList.GetComponent<TMPro.TextMeshProUGUI>().text = "Tomato";
                 FoodPicture.GetComponent<Image>().sprite = hamBurger;
                 recipeID = 6;
@@ -126,29 +129,16 @@ public class OrderSystem : MonoBehaviour
         }
     }
 
-    public void foodMadePopUp() //ingredient creation
-    {
-        if (foodText.activeInHierarchy == false) //checks if the popup is already active in the game and if not runs the following code
-        {
-            foodText.SetActive(true); //sets the popup to being active and displayed
-            Invoke("foodMadePopUp", 2); //runs the function again after 3 seconds so that the text is only displayed for a certain amount of time
-        }
-        else if (foodText.activeInHierarchy == true) ////checks if the popup is already active in the game and if it is runs the following code
-        {
-            foodText.SetActive(false); //sets the popup to being false and therefore not displayed
-        }
-    }
-
-    //public void recipeCheck(int recipeValue)
+    //public void foodMadePopUp() //ingredient creation
     //{
-    //    if (bagInventory.foodValue == recipeValue);
+    //    if (foodText.activeInHierarchy == false) //checks if the popup is already active in the game and if not runs the following code
     //    {
-    //        Debug.Log("food made");
-    //        foodText.SetActive(true);
-    //        isRecipeActive = false;
-    //        bagInventory.saladPresent = false;
-    //        bagInventory.bunPresent = false;
-    //        bagInventory.beefPresent = false;
+    //        foodText.SetActive(true); //sets the popup to being active and displayed
+    //        Invoke("foodMadePopUp", 2); //runs the function again after 3 seconds so that the text is only displayed for a certain amount of time
+    //    }
+    //    else if (foodText.activeInHierarchy == true) ////checks if the popup is already active in the game and if it is runs the following code
+    //    {
+    //        foodText.SetActive(false); //sets the popup to being false and therefore not displayed
     //    }
     //}
 }

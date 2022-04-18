@@ -7399,13 +7399,13 @@ MonoBehaviour:
   deathTimer: {fileID: 1180714035}
   scoreSystem: {fileID: 1246033365}
   dataHandling: {fileID: 244665941}
+  audioManager: {fileID: 1729922251}
   recipeValue: 0
   recipeID: 0
   hamBurger: {fileID: 21300000, guid: 4c7f42919defe4a47bd0c8632e9c2763, type: 3}
   salad: {fileID: 21300000, guid: dc8af8cdd81d0d548ae1f20353f00518, type: 3}
   beef: {fileID: 21300000, guid: f4ee27b299c07d744bed2571f03e4af2, type: 3}
   tomato: {fileID: 21300000, guid: ab7c2a668055c354eba919cc3837b48a, type: 3}
-  foodText: {fileID: 803492459}
   ingredientList: {fileID: 1571786927}
   FoodPicture: {fileID: 648341522}
 --- !u!222 &1358413949
@@ -9278,6 +9278,15 @@ MonoBehaviour:
     reverbZoneMix: 1
     priority: 128
     loop: 1
+    source: {fileID: 0}
+  - name: clock
+    clip: {fileID: 8300000, guid: 897058c239d988a46ba714eb6786e97e, type: 3}
+    volume: 0.7
+    pitch: 1
+    spatialBlend: 0
+    reverbZoneMix: 1
+    priority: 100
+    loop: 0
     source: {fileID: 0}
 --- !u!1 &1733967670
 GameObject:
