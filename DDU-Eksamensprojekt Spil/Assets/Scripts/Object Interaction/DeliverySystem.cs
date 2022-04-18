@@ -84,7 +84,7 @@ public class DeliverySystem : MonoBehaviour
                         Debug.Log("Tomato inserted in bag");
                         foodValue += 35;
                         trash.trashCanSingle();
-                        lastFoodInserted = 20;
+                        lastFoodInserted = 35;
                         dataHandling.RecipeCheckHandling();
                     }
                     else

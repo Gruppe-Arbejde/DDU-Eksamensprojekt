@@ -37,7 +37,7 @@ public class InsanityScript : MonoBehaviour
     {
         if (teleport.inFreezer == true)
         {
-            insanityLight.pointLightOuterRadius += -0.1f; //slowly subtract a value from the lights outerRadius
+            insanityLight.pointLightOuterRadius += -0.2f; //slowly subtract a value from the lights outerRadius
             Invoke("moreInsane", 1); //invoke the function again after 1 second
         }
         else if (teleport.inFreezer == false)

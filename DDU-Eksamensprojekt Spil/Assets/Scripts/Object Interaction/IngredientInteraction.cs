@@ -175,15 +175,21 @@ public class IngredientInteraction : MonoBehaviour
             Debug.Log("you begin to cook beef"); //debug
             trash.trashCanSingle();
             cookerFull = true;
+            audioSource.Play();
+            anim.Play("beefCooking");
             Invoke("ProcessBeef", 3);
         }
         else if (beefCut == true && inventory.maxInventoryActive == false)
         {
+            anim.enabled = true; //stupid code that needs to be here for animation to work properly
+            anim.Play("beefIdle");
             cookerFull = false;
             beefCut = false;
             Debug.Log("Acquired cooked beef");
+
             ingredientInventory.GetComponent<Image>().sprite = choppedBeef;
             ingredientInventory.GetComponent<Image>().color = Color.white;
+
             inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
             interaction.foodID = 40;
         }
@@ -198,26 +204,13 @@ public class IngredientInteraction : MonoBehaviour
             case 15:
                 if (saladCut == false && cuttingBoardFull == false)
                 {
-                    Debug.Log("you begin to cut salad"); //debug
-                    trash.trashCanSingle();
                     cuttingBoardFull = true;
                     audioSource.Play();
+                    Debug.Log("you begin to cut salad"); //debug
+
+                    trash.trashCanSingle();
                     anim.Play("SaladChopping");
                     Invoke("ProcessSalad", 3);
-                }
-                else if (saladCut == true && inventory.maxInventoryActive == false)
-                {
-                    anim.enabled = true; //stupid code that needs to be here for animation to work properly
-                    anim.Play("cuttingBoard_Idle");
-                    cuttingBoardFull = false;
-                    saladCut = false;
-                    Debug.Log("Acquired chopped salad");
-
-                    ingredientInventory.GetComponent<Image>().sprite = choppedSalad;
-                    ingredientInventory.GetComponent<Image>().color = Color.white;
-
-                    inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
-                    interaction.foodID = 30;
                 }
                 break;
             case 20:
@@ -226,38 +219,46 @@ public class IngredientInteraction : MonoBehaviour
                     anim.Play("cuttingBoard_Idle");
                     audioSource.Play();
                     Debug.Log("you begin to cut tomatoes"); //debug
+
                     trash.trashCanSingle();
                     cuttingBoardFull = true;
-                    audioManager.Play("cutting salad");
                     anim.Play("TomatoChopping");
                     Invoke("ProcessTomato", 3);
-                }
-                else if (tomatoCut == true && inventory.maxInventoryActive == false)
-                {
-                    anim.enabled = true; //stupid code that needs to be here for animation to work properly
-                    anim.Play("cuttingBoard_Idle");
-
-                    cuttingBoardFull = false;
-                    tomatoCut = false;
-                    Debug.Log("Acquired chopped tomato");
-                    ingredientInventory.GetComponent<Image>().sprite = choppedTomato;
-                    ingredientInventory.GetComponent<Image>().color = Color.white;
-                    inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
-                    interaction.foodID = 35;
                 }
                 break;
             default:
                 break;
         }
-        //if (interaction.foodID == 10)
-        //{
-        //    Debug.Log("you begin cut vegetables"); //debug
-        //}
-        //else
-        //{
-        //    Debug.Log("inventory is full"); //debug
-        //    maxInvPopUp(); //runs the maxInvPopUp function
-        //}
+        //outside of loop so that it can be accesed from all types of interaction ids
+        if (saladCut == true && inventory.maxInventoryActive == false)
+        {
+            anim.enabled = true; //stupid code that needs to be here for animation to work properly
+            anim.Play("cuttingBoard_Idle");
+            cuttingBoardFull = false;
+            saladCut = false;
+            Debug.Log("Acquired chopped salad");
+
+            ingredientInventory.GetComponent<Image>().sprite = choppedSalad;
+            ingredientInventory.GetComponent<Image>().color = Color.white;
+
+            inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
+            interaction.foodID = 30;
+        }
+        else if (tomatoCut == true && inventory.maxInventoryActive == false)
+        {
+            anim.enabled = true; //stupid code that needs to be here for animation to work properly
+            anim.Play("cuttingBoard_Idle");
+
+            cuttingBoardFull = false;
+            tomatoCut = false;
+            Debug.Log("Acquired chopped tomato");
+
+            ingredientInventory.GetComponent<Image>().sprite = choppedTomato;
+            ingredientInventory.GetComponent<Image>().color = Color.white;
+
+            inventory.maxInventoryActive = true; //the player has picked up an ingredient an the inventory is therefore true
+            interaction.foodID = 35;
+        }
     }
 
     public void maxInvPopUp() //ingredient creation

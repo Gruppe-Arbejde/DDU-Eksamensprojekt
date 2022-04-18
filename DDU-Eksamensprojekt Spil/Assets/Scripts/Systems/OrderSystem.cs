@@ -58,6 +58,10 @@ public class OrderSystem : MonoBehaviour
                 scoreSystem.ScoreIncrease();
                 dataHandling.RecipeChecklistColorCorrect();
             }
+            //else if (deliverySystem.foodValue > recipeValue)
+            //{
+
+            //}
         }
         dataHandling.RecipeChecklistImageHandling();
     }
