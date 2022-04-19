@@ -97,10 +97,6 @@ public class DeliverySystem : MonoBehaviour
             }
             audioManager.Play("player pickup");
         }
-        if (Input.GetKeyDown(KeyCode.E) && pickUpAllowed)
-        {
-
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

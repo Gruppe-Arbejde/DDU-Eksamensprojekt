@@ -6053,6 +6053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 1872530473}
+  anim: {fileID: 0}
 --- !u!1 &1123889920
 GameObject:
   m_ObjectHideFlags: 0
@@ -7406,7 +7407,6 @@ MonoBehaviour:
   salad: {fileID: 21300000, guid: 608e8d4fc8a4e0743b275d41151b77f3, type: 3}
   beef: {fileID: 21300000, guid: 00245169983596146a776de2ceff0c02, type: 3}
   tomato: {fileID: 21300000, guid: 74a7276b1f7ce554eb62058e764a45c4, type: 3}
-  ingredientList: {fileID: 1571786927}
   FoodPicture: {fileID: 648341522}
 --- !u!222 &1358413949
 CanvasRenderer:
