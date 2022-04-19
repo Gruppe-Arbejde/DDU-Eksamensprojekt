@@ -26,7 +26,7 @@ public class InsanityScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (insanityLight.pointLightOuterRadius <= 1) //if the light gets too dim then execute the following code
+        if (insanityLight.pointLightOuterRadius <= 0.1) //if the light gets too dim then execute the following code
         {
             SceneManager.LoadScene(2); //the player is killed and sent back to the main menu
         }
